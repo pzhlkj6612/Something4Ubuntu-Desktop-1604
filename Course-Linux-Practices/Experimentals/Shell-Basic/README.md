@@ -34,9 +34,9 @@ E: 在/dev 目录下查找由 s 开头且文件名由 5 个字符组成的文件
 
 pc.txt 文件内容如下：
 
-> student1：1301：75    
-> Student2：1302：96    
-> Student3：1303：99    
-> Student4：1302：93    
-> Student5：1303：23    
-> Student6：1301：77    
+> student1:1301:75    
+> Student2:1302:96    
+> Student3:1303:99    
+> Student4:1302:93    
+> Student5:1303:23    
+> Student6:1301:77    
