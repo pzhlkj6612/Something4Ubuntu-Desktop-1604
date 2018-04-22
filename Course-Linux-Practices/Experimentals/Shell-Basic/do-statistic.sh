@@ -18,13 +18,16 @@ if [ ! -e $inFile ]
 		echo 'Student6:1301:77' >> $inFile
 fi
 
+
+declare -i isGood=85
+
 declare -i Class1301=0
 declare -i Class1302=0
 declare -i Class1303=0
 
-declare -i Class1301_SUM=0
-declare -i Class1302_SUM=0
-declare -i Class1303_SUM=0
+declare -i Class1301_Good=0
+declare -i Class1302_Good=0
+declare -i Class1303_Good=0
 
 for line in $(cat $inFile)
 	do
@@ -34,25 +37,36 @@ for line in $(cat $inFile)
 		case $var1 in
 			'1301')
 				Class1301=$Class1301+1
-				Class1301_SUM=$Class1301_SUM+$var2
+				if [ $var2 -gt $isGood ]
+					then
+						Class1301_Good=$Class1301_Good+1
+				fi
 				;;
 			'1302')
 				Class1302=$Class1302+1
-				Class1302_SUM=$Class1302_SUM+$var2
+				if [ $var2 -gt $isGood ]
+					then
+						Class1302_Good=$Class1302_Good+1
+				fi
 				;;
 			'1303')
 				Class1303=$Class1303+1
-				Class1303_SUM=$Class1303_SUM+$var2
+				if [ $var2 -gt $isGood ]
+					then
+						Class1303_Good=$Class1303_Good+1
+				fi
 				;;
 		esac
 	done
 
-Class1301_AVG=$(echo "$Class1301_SUM/$Class1301" | bc -l)
-Class1302_AVG=$(echo "$Class1302_SUM/$Class1302" | bc -l)
-Class1303_AVG=$(echo "$Class1303_SUM/$Class1303" | bc -l)
+Class1301_RATIO=$(echo "$Class1301_Good/$Class1301" | bc -l)
+Class1302_RATIO=$(echo "$Class1302_Good/$Class1302" | bc -l)
+Class1303_RATIO=$(echo "$Class1303_Good/$Class1303" | bc -l)
 
-echo "Class 1301: $Class1301, Sum: $Class1301_SUM, AVG(sum): $Class1301_AVG"
-echo "Class 1302: $Class1302, Sum: $Class1302_SUM, AVG(sum): $Class1302_AVG"
-echo "Class 1303: $Class1303, Sum: $Class1303_SUM, AVG(sum): $Class1303_AVG"
+echo "Class 1301: $Class1301, excellence rate: $Class1301_RATIO"
+echo "Class 1302: $Class1302, excellence rate: $Class1302_RATIO"
+echo "Class 1303: $Class1303, excellence rate: $Class1303_RATIO"
+
+
 
 rm $inFile
