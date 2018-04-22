@@ -4,6 +4,6 @@
 
 Actually, it was "Operating System Practices".
 
-## Install Ubuntu on nVIDIA Notebook
+## [Install Ubuntu on nVIDIA Notebook](./NVIDIA-FxxK-YOU)
 
 Helpful?
