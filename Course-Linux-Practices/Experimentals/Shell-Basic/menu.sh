@@ -55,7 +55,7 @@ function InputProc(){
 function EndProc(){
 	echo
 	echo
-	echo -n "Press any key to continue..."
+	echo -n "Press Enter to continue..."
 	read
 }
 
@@ -69,42 +69,48 @@ function InitKeyFiles(){
 }
 
 
+file_list_command='find /etc/ -maxdepth 1 -type f'
+declare -i file_count=$($file_list_command | wc -l)
+
+
 function c_A(){
 	echo
 	echo
 	echo " ****** Create subfolder and copy files ******"
 	echo
 
-	mkdir ~/$folderName 
-
-	chmod 777 ~/$folderName
-	chmod g-w,o-w ~/$folderName
-
-	if [ $(find ~ -type d -name "$folderName" | wc -l) -eq 1 ]
+	if [ $(find ~ -type d -name "$folderName" | wc -l) -eq 0 ]
 		then
-			cp ~/$file1Name ~/$folderName/
-			cp ~/$file2Name ~/$folderName/
-
-			echo "Content of \"$file1Name\" in folder \"~/$folderName/\":"
-			cat ~/$folderName/$file1Name
-
-			echo
-			echo "Content of \"$file2Name\" in folder \"~/$folderName/\":"
-			cat ~/$folderName/$file2Name
-
-			:>~/$folderName/$file1Name
-			:>~/$folderName/$file2Name
+			mkdir ~/$folderName
 	fi
+
+	chmod 755 ~/$folderName
+
+	cp ~/$file1Name ~/$folderName/
+	cp ~/$file2Name ~/$folderName/
+
+	echo "Content of \"$file1Name\" in folder \"~/$folderName/\":"
+	cat ~/$folderName/$file1Name
+
+	echo
+	echo "Content of \"$file2Name\" in folder \"~/$folderName/\":"
+	cat ~/$folderName/$file2Name
+
+	:>~/$folderName/$file1Name
+	:>~/$folderName/$file2Name
 }
 
 
 function c_B(){
 	echo
 	echo
-	echo " ****** Permission test ******"
+	echo " ****** Permission test randomly******"
 	echo
 
-	foundFilePath=$(find /etc/ -maxdepth 1 -type f | head -n 1)
+	echo $file_count
+
+	declare -i file_index=$(echo "$RANDOM % ( $file_count - 1 ) + 1" | bc)
+	foundFilePath=$($file_list_command | head -n $file_index | tail -n 1)
 	ls -l $foundFilePath | grep 'rwx......' 1>/dev/null
 	if [ $? -eq 1 ]
 		then
@@ -145,8 +151,9 @@ function c_D(){
 	echo "Count of folders in \"/dev/\": $(ls -l /dev/ | grep '^d.*' | wc -l)"
 	echo "Count of symbolic link files in \"/dev/\": $(ls -l /dev/ | grep '^l.*' | wc -l)"
 
+	declare -i file_index=$(echo "$RANDOM % ( $file_count - 1 ) + 1" | bc)
+	foundFilePath=$($file_list_command | head -n $file_index | tail -n 1)
 	echo
-	foundFilePath=$(find /etc/ -maxdepth 1 -type f | head -n 1)
 	echo "Count of empty lines in \"$foundFilePath\": $(cat $foundFilePath | grep '^$' | wc -l)"
 
 	echo
@@ -170,7 +177,7 @@ function DrawMenu(){
 	echo -e $"\t\t--------------------------------------------------------------------"
 	echo
 	echo -e $"\t\t\tA. Create subfolder and copy files"
-	echo -e $"\t\t\tB. Permission test"
+	echo -e $"\t\t\tB. Permission test randomly"
 	echo -e $"\t\t\tC. Characters convert"
 	echo -e $"\t\t\tD. Do counting & show env"
 	echo -e $"\t\t\tE. Find something"
@@ -198,3 +205,4 @@ function c_Q(){
 	InitKeyFiles
 	Cycle
 #}
+
