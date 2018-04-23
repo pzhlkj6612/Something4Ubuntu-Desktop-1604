@@ -79,7 +79,8 @@ function c_A(){
 	echo " ****** Create subfolder and copy files ******"
 	echo
 
-	if [ $(find ~ -type d -name "$folderName" | wc -l) -eq 0 ]
+	declare -i folderExistedFlag=$(find ~ -type d -name "$folderName" | wc -l)
+	if [ $folderExistedFlag -eq 0 ]
 		then
 			mkdir ~/$folderName
 	fi
@@ -98,6 +99,21 @@ function c_A(){
 
 	:>~/$folderName/$file1Name
 	:>~/$folderName/$file2Name
+
+	echo "Content of \"$file1Name\" in folder \"~/$folderName/\":"
+	cat ~/$folderName/$file1Name
+
+	echo
+	echo "Content of \"$file2Name\" in folder \"~/$folderName/\":"
+	cat ~/$folderName/$file2Name
+
+	#Clear
+	rm ~/$folderName/$file1Name
+	rm ~/$folderName/$file2Name
+	if [ $folderExistedFlag -eq 0 ]
+		then
+			rm -rdf ~/$folderName
+	fi
 }
 
 
@@ -107,16 +123,35 @@ function c_B(){
 	echo " ****** Permission test randomly******"
 	echo
 
-	echo $file_count
-
-	declare -i file_index=$(echo "$RANDOM % ( $file_count - 1 ) + 1" | bc)
+	declare -i file_index=$(expr $(echo "$RANDOM % ( $file_count - 1 ) + 1"))
 	foundFilePath=$($file_list_command | head -n $file_index | tail -n 1)
-	ls -l $foundFilePath | grep 'rwx......' 1>/dev/null
-	if [ $? -eq 1 ]
+#	ls -l $foundFilePath | grep 'rwx......' 1>/dev/null
+#	if [ $? -eq 1 ]
+#		then
+#			echo "I don't have \"rwx\" permission with \"$foundFilePath\"."
+#		else
+#			echo "I have \"rwx\" permission with \"$foundFilePath!\"."
+#	fi
+	test -r $foundFilePath
+	if [ $? -eq 0 ]
 		then
-			echo "I don't have \"rwx\" permission with \"$foundFilePath\"."
+			echo "Readable with $foundFilePath"
 		else
-			echo "I have \"rwx\" permission with \"$foundFilePath!\"."
+			echo "Unreadable with $foundFilePath"
+	fi
+	test -w $foundFilePath
+	if [ $? -eq 0 ]
+		then
+			echo "Writable with $foundFilePath"
+		else
+			echo "Unwritable with $foundFilePath"
+	fi
+	test -x $foundFilePath
+	if [ $? -eq 0 ]
+		then
+			echo "Executable with $foundFilePath"
+		else
+			echo "Unexecutable with $foundFilePath"
 	fi
 }
 
@@ -151,7 +186,7 @@ function c_D(){
 	echo "Count of folders in \"/dev/\": $(ls -l /dev/ | grep '^d.*' | wc -l)"
 	echo "Count of symbolic link files in \"/dev/\": $(ls -l /dev/ | grep '^l.*' | wc -l)"
 
-	declare -i file_index=$(echo "$RANDOM % ( $file_count - 1 ) + 1" | bc)
+	declare -i file_index=$(expr $(echo "$RANDOM % ( $file_count - 1 ) + 1"))
 	foundFilePath=$($file_list_command | head -n $file_index | tail -n 1)
 	echo
 	echo "Count of empty lines in \"$foundFilePath\": $(cat $foundFilePath | grep '^$' | wc -l)"
@@ -189,10 +224,10 @@ function DrawMenu(){
 
 
 function c_Q(){
-	#Clean
+	#Clear
 	rm ~/$file1Name
 	rm ~/$file2Name
-	rm -rdf ~/$folderName
+#	rm -rdf ~/$folderName
 	
 	clear
 	echo "Goodbye!"
