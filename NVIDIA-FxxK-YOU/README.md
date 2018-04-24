@@ -67,7 +67,7 @@ PPS: DO NOT modify ```/etc/default/grub``` to apply "nomodeset" permanently if y
 
 <br/>
 
-If you don't want to experience the [Stuck in Login Loop](#stuck-in-login-loop), it's the best chance to install the driver for your nVIDIA standalone graphics card, see below.
+If you don't want to experience the [Stuck in Login Loop](#stuck-in-login-loop), this is the best chance to install the driver for your nVIDIA standalone graphics card, see below.
 
 <br/>
 
@@ -79,8 +79,20 @@ Ref:
 
 <br/>
 
-## Stuck in Login Loop 
+## Stuck in Login Loop [Uncompleted]
 
 ;
+
+*Waiting for test results*
+
+Ref:
+
+- [Ubuntu 16 Stuck in Login Loop after Installing Nvidia 364 Drivers - Ask Ubuntu](https://askubuntu.com/questions/762831/ubuntu-16-stuck-in-login-loop-after-installing-nvidia-364-drivers)
+- []()
+- []()
+- []()
+- [ubuntu16.04 笔记本 安装双显卡驱动GTX960M  可快捷切换 - CSDN博客](https://blog.csdn.net/feishicheng/article/details/70662094)
+- [Ubuntu 14.04 卡在Logo中无法进入系统解决方案 - CSDN博客](https://blog.csdn.net/github_33934628/article/details/52422855)
+- [安装Ubuntu 16.04时卡住的那些坑 - CSDN博客](https://blog.csdn.net/Dod_Jdi/article/details/78635126)
 
 <br/>
