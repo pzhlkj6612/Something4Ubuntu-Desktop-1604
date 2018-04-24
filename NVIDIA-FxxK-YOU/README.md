@@ -30,7 +30,27 @@
 
 ## Stuck in Ubuntu Logo after installation
 
-;
+- Reboot
+- [Enter Grub Menu](#access-the-grub-menu) after POST
+- Use the Up and Down arrow keys to select ```Ubuntu``` and press 'e' key
+- Find ```linux``` line and add "nomodeset" near "quiet splash" with spaces:
+
+old,
+```
+    linux    /boot/...xxxx ro  quiet splash $vt_handoff
+```
+new,
+```
+    linux    /boot/...xxxx ro  quiet splash nomodeset $vt_handoff
+```
+or,
+```
+    linux    /boot/...xxxx ro  nomodeset quiet splash $vt_handoff
+```
+- Press "Ctrl-X" or "F10" to apply the modification and go for boot
+- Now, you can see a normal booting process probably
+
+If you don't want to experience the [Stuck in Login Loop](#stuck-in-login-loop), it's the best chance to install the driver for your nVIDIA standalone graphics card, see below.
 
 <br/>
 
