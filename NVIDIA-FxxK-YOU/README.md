@@ -36,6 +36,8 @@ Ref:
 - [How to access the grub boot menu before it tries to load the operating system - Quora](https://www.quora.com/How-do-I-access-the-grub-boot-menu-before-it-tries-to-load-the-operating-system)
 - [How to Display Grub Menu at Boot Time in Ubuntu](http://www.pontikis.net/tip/?id=36)
 - [grub2 - Warning: Setting GRUB_TIMEOUT to a non-zero value when GRUB_HIDDEN_TIMEOUT is set is no longer supported - Unix &amp; Linux Stack Exchange](https://unix.stackexchange.com/questions/400803/warning-setting-grub-timeout-to-a-non-zero-value-when-grub-hidden-timeout-is-se)
+- [\[SOLVED\] how to get to grub menu during boot?](https://ubuntuforums.org/showthread.php?t=1520821)
+- [\[SOLVED\] GRUB Menu not showing after Ubuntu Installation](https://ubuntuforums.org/showthread.php?t=2380145)
 
 <br/>
 
@@ -75,6 +77,7 @@ Ref:
 
 - [5 Keys You Can Press at the GRUB Menu - OMG! Ubuntu!](https://www.omgubuntu.co.uk/2016/07/key-to-show-grub-menu-ubuntu)
 - [ubuntu nomodeset设定 - CSDN博客](https://blog.csdn.net/CaptainHailong/article/details/79765579)
+- [graphics - How do I set &#39;nomodeset&#39; after I&#39;ve already installed Ubuntu? - Ask Ubuntu](https://askubuntu.com/questions/38780/how-do-i-set-nomodeset-after-ive-already-installed-ubuntu)
 - [boot - What do the nomodeset, quiet and splash kernel parameters mean? - Ask Ubuntu](https://askubuntu.com/questions/716957/what-do-the-nomodeset-quiet-and-splash-kernel-parameters-mean)
 
 <br/>
