@@ -14,6 +14,8 @@
 
 Try pressing "Left Shift", "Right Shift", "Esc" or "Spacebar" key continually to access Grub Menu after POST.
 
+<br/>
+
 Ref:
 
 > If your system is UEFI, [advice on the forums](https://ubuntuforums.org/showthread.php?t=2345616#post13579808) says the **ESC key** might be used instead of **Shift** to display the grub menu.
@@ -54,7 +56,20 @@ or,
 - Press "Ctrl-X" or "F10" to apply the modification and go for boot
 - Now, you can see a normal booting process probably
 
+PS: These are temporary settings so all your changes will be recovered before next boot.
+
+PPS: DO NOT modify ```/etc/default/grub``` to apply "nomodeset" permanently if you have the plan to install nVIDIA driver.
+
+<br/>
+
 If you don't want to experience the [Stuck in Login Loop](#stuck-in-login-loop), it's the best chance to install the driver for your nVIDIA standalone graphics card, see below.
+
+<br/>
+
+Ref:
+
+- [5 Keys You Can Press at the GRUB Menu - OMG! Ubuntu!](https://www.omgubuntu.co.uk/2016/07/key-to-show-grub-menu-ubuntu)
+- [ubuntu nomodeset设定 - CSDN博客](https://blog.csdn.net/CaptainHailong/article/details/79765579)
 
 <br/>
 
