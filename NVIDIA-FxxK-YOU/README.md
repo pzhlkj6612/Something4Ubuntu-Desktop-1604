@@ -33,6 +33,9 @@ Ref:
 > I've heard **Shift** does it. But I've used **Space** before and it worked.
 
 - [\[SOLVED\] Can't access grub boot menu with shift key (or anything else)](https://ubuntuforums.org/showthread.php?t=1939408#post_11757915)
+- [How to access the grub boot menu before it tries to load the operating system - Quora](https://www.quora.com/How-do-I-access-the-grub-boot-menu-before-it-tries-to-load-the-operating-system)
+- [How to Display Grub Menu at Boot Time in Ubuntu](http://www.pontikis.net/tip/?id=36)
+- [grub2 - Warning: Setting GRUB_TIMEOUT to a non-zero value when GRUB_HIDDEN_TIMEOUT is set is no longer supported - Unix &amp; Linux Stack Exchange](https://unix.stackexchange.com/questions/400803/warning-setting-grub-timeout-to-a-non-zero-value-when-grub-hidden-timeout-is-se)
 
 <br/>
 
