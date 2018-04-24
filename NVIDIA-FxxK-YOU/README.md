@@ -70,6 +70,7 @@ Ref:
 
 - [5 Keys You Can Press at the GRUB Menu - OMG! Ubuntu!](https://www.omgubuntu.co.uk/2016/07/key-to-show-grub-menu-ubuntu)
 - [ubuntu nomodeset设定 - CSDN博客](https://blog.csdn.net/CaptainHailong/article/details/79765579)
+- [boot - What do the nomodeset, quiet and splash kernel parameters mean? - Ask Ubuntu](https://askubuntu.com/questions/716957/what-do-the-nomodeset-quiet-and-splash-kernel-parameters-mean)
 
 <br/>
 
