@@ -10,3 +10,7 @@ Experimentals:
 Useful tool:
 
 - [Pygments - It is a generic syntax highlighter](http://pygments.org/)
+
+Recommendation:
+
+- [Windows Subsystem for Linux &#8211; The underlying technology enabling the Windows Subsystem for Linux](https://blogs.msdn.microsoft.com/wsl/)
