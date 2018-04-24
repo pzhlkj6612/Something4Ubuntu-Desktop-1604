@@ -8,7 +8,7 @@
 
 <br/>
 
-## You should know firstly
+## Things you should know first
 
 #### Access the Grub Menu
 
