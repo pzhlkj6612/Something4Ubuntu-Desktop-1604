@@ -12,6 +12,10 @@
 
 #### Access the Grub Menu
 
+Try pressing "Left Shift", "Right Shift", "Esc" or "Spacebar" key continually to access Grub Menu after POST.
+
+Ref:
+
 > If your system is UEFI, [advice on the forums](https://ubuntuforums.org/showthread.php?t=2345616#post13579808) says the **ESC key** might be used instead of **Shift** to display the grub menu.
 
 [\[ubuntu\] Unable to access the Grub Menu (so that I revert back to my original kernel)](https://ubuntuforums.org/showthread.php?t=2361442#post_13645818)
@@ -22,7 +26,7 @@
 
 [\[ubuntu\] How do let UEFI access Grub menu?](https://ubuntuforums.org/showthread.php?t=2345616#post13579808)
 
-> I've heard Shift does it. But I've used Space before and it worked.
+> I've heard **Shift** does it. But I've used **Space** before and it worked.
 
 [grub2 - How to get to the GRUB menu at boot-time? - Ask Ubuntu](https://askubuntu.com/questions/16042/how-to-get-to-the-grub-menu-at-boot-time#answer-16048)
 
