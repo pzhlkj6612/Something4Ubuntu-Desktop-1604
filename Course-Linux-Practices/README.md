@@ -5,7 +5,7 @@
 Experimentals:
 
 - [Shell Basic](./Experimentals/Shell-Basic)
-- C Language
+- [C Language](./Experimentals/C-Language)
 
 Useful tool:
 
