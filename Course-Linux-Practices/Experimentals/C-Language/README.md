@@ -32,3 +32,6 @@
 # 有用的
 
 [c - Where is sys/types.h located? - Stack Overflow](https://stackoverflow.com/questions/11823063/where-is-sys-types-h-located)
+[Section 2: system calls - Linux man pages](https://linux.die.net/man/2/)
+[SSIZE_MAX](https://lists.gnu.org/archive/html/bug-gnulib/2006-06/msg00014.html)
+[gcc - Is bool a native C type? - Stack Overflow](https://stackoverflow.com/questions/1608318/is-bool-a-native-c-type)
