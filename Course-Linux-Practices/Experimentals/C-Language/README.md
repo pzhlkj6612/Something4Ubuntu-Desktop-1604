@@ -2,7 +2,7 @@
 
 本实验要求在 Linux/Unix 环境下用 C 语言编写三个具体的 shell 命令，基本涉及了 Linux/Unix 文件系统中较为常用的有关文件操作的系统调用。内容如下：
 
-## [copy](#)
+## [copy](./copy.c)
 
 编程实现 copy 命令，执行格式：```copy file1 file2 file3```
 
@@ -12,7 +12,7 @@
 
 程序可能涉及到的系统调用：read(), write(), open(), creat(), close(), lseek()
 
-## [renam](#)
+## [renam](./renam.c)
 
 编程实现 renam 命令（即 Linux 下的 rename ），功能是实现文件的重命名，执行格式：```renam filea fileb```
 
@@ -20,7 +20,7 @@
 
 程序可能涉及到的系统调用：read(), write(), open(), stat(), close(), link(), unlink()
 
-## [lnk](#)
+## [lnk](./lnk.c)
 
 编程实现 lnk 命令，执行格式：```lnk f1 f2 f3```。具体要求如下：
 
