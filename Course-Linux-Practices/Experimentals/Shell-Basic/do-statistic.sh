@@ -59,9 +59,18 @@ for line in $(cat $inFile)
 		esac
 	done
 
-Class1301_RATIO=$(echo "$Class1301_Good/$Class1301" | bc -l)
-Class1302_RATIO=$(echo "$Class1302_Good/$Class1302" | bc -l)
-Class1303_RATIO=$(echo "$Class1303_Good/$Class1303" | bc -l)
+if [ $Class1301 -ne 0 ]
+	then
+		Class1301_RATIO=$(echo "$Class1301_Good/$Class1301" | bc -l)
+fi
+if [ $Class1302 -ne 0 ]
+	then
+		Class1302_RATIO=$(echo "$Class1302_Good/$Class1302" | bc -l)
+fi
+if [ $Class1303 -ne 0 ]
+	then
+		Class1303_RATIO=$(echo "$Class1303_Good/$Class1303" | bc -l)
+fi
 
 echo "Class 1301: $Class1301, excellence rate: $Class1301_RATIO"
 echo "Class 1302: $Class1302, excellence rate: $Class1302_RATIO"
