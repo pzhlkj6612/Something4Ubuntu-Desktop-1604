@@ -49,6 +49,9 @@ int main(int argc, char* argv[]){
 	char* file1 = argv[1];
 	char* file2 = argv[2];
 
+	printf("Argument[1]: %s\n", file1);
+	printf("Argument[2]: %s\n", file2);
+
 	int fd_f1, fd_f2;
 
 	if(-1 == (fd_f1 = open(file1, O_RDONLY))){
