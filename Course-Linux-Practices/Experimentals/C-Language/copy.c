@@ -67,11 +67,11 @@ int main(int argc, char* argv[]){
 	close(fd_f2);
 
 	off_t cur_offset;
-	off_t hole_size = 23333;
+	off_t hole_size = 666233;
 	if(-1 == write(fd_f3, buf_f1, size_f1)){
 		return FileOptFailed("write", file3);
 	}
-	if(-1 == (cur_offset = lseek(fd_f3, hole_size, SEEK_CUR))){
+	if(-1 == (cur_offset = lseek(fd_f3, hole_size, SEEK_END))){
 		return FileOptFailed("change offset", file3);
 	}
 	if(-1 == write(fd_f3, buf_f2, size_f2)){
