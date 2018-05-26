@@ -5,7 +5,7 @@
 Experimentals:
 
 - [Shell Basic](./Experimentals/Shell-Basic)
-- [C Language](./Experimentals/C-Language)
+- [C Language](./Experimentals/C-Language) -- uncompleted, read file loop with buffer
 
 Useful tool:
 
