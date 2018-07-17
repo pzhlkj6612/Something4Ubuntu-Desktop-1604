@@ -16,6 +16,44 @@
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y vim
 ```
+
+<br/>
+
+### Set a static IP and DNS servers - Not 17.10, 18.04 and newer
+
+1. Which interface do I use for my static IP?
+
+
+
+2. Configure the network interface
+
+```shell
+sudo vi /etc/network/interfaces
+```
+
+```shell
+# This file describes the network interfaces available in your system
+# and how to activate then. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto enp2s0
+iface enp2s0 inet dhcp
+```
+
+Ref:
+- [Network configuration on Ubuntu 12.04 - 17.04 \(incl. Ubuntu 16.04 LTS\) # Linux Basics - Set a Static IP on Ubuntu](https://www.howtoforge.com/linux-basics-set-a-static-ip-on-ubuntu#ubuntu-incl-ubuntu-lts)
+- [gather-info # How to set a static IP in Ubuntu - Ubuntu Network Configuration](http://www.sudo-juice.com/how-to-set-a-static-ip-in-ubuntu-network-confirguration/#gather-info)
+- [networking - Network interface name changes after update to 15.10 - udev changes - Ask Ubuntu](https://askubuntu.com/questions/689070/network-interface-name-changes-after-update-to-15-10-udev-changes)
+
+Ref*:
+- [Network Configuration](https://help.ubuntu.com/lts/serverguide/network-configuration.html)
+
 <br/>
 
 ### Get wireless network
@@ -31,6 +69,7 @@ sudo apt install -y wpasupplicant wireless-tools
 ```shell
 sudo iwconfig
 ```
+
 ```shell
 wlp3s0    IEEE 802.11bgn  ESSID:off/any
           Mode:Managed  Access Point: Not-Associated   Tx-Power=20 dBm
@@ -43,6 +82,7 @@ enp2s0    no wireless extensions.
 lo        no wireless extensions.
 
 ```
+
 ```wlp3s0``` is my wlan interface.
 
 3. Bring the interface up
@@ -56,6 +96,7 @@ sudo ifconfig wlp3s0 up
 ```shell
 sudo iwlist wlp3s0 scan | less
 ```
+
 ```shell
 wlp3s0  Scan completed :
         Cell 01 - Address: FF:FF:FF:FF:FF:FF
@@ -72,6 +113,7 @@ wlp3s0  Scan completed :
         Cell 02 - Address: ...
         
 ```
+
 ```NB``` is the SSID of my router.
 
 <br/>
@@ -80,7 +122,6 @@ Ref:
 
 - [Get wireless working under Ubuntu Server 16.04](https://ubuntuforums.org/showthread.php?t=2325768)
 - [Linux WPA Supplicant \(IEEE 802.1X, WPA, WPA2, RSN, IEEE 802.11i\)](https://w1.fi/wpa_supplicant/)
-- [networking - Network interface name changes after update to 15.10 - udev changes - Ask Ubuntu](https://askubuntu.com/questions/689070/network-interface-name-changes-after-update-to-15-10-udev-changes)
 - [SSID、BSSID、ESSID区别？ - 知乎](https://www.zhihu.com/question/24362037)
 
 <br/>
