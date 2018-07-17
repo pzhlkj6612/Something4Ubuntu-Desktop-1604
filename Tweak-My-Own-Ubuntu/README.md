@@ -8,6 +8,32 @@
 
 <br/>
 
-## Find wallpapers
+## Server
 
-## Fix time differences between ubuntu and windows dual boot
+### Things that we have to do
+
+```shell
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y vim
+```
+
+### Get wireless network
+
+1. Find your netword device
+
+```shell
+ifconfig -a
+```
+```shell
+
+```
+
+Ref:
+
+- [SSID、BSSID、ESSID区别？ - 知乎](https://www.zhihu.com/question/24362037)
+
+## Desktop
+
+### Find wallpapers
+
+### Fix time differences between ubuntu and windows dual boot
