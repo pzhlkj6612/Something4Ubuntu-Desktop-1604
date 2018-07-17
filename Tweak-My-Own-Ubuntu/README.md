@@ -10,6 +10,7 @@
 
 ```shell
 sudo apt update && sudo apt upgrade -y
+sudo reboot
 sudo apt install -y vim
 ```
 
@@ -19,7 +20,22 @@ sudo apt install -y vim
 
 1. Which interface do I use for my static IP?
 
+```shell
+sudo ifconfig  -a
+```
 
+```shell
+enp2s0    Link encap:Ethernet  HWaddr FF:FF:FF:FF:FF:FF
+          inet addr:...
+          ...
+
+lo        Link encap:Local Loopback
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          ...
+
+...
+
+```
 
 2. Configure the network interface
 
@@ -94,20 +110,21 @@ sudo iwlist wlp3s0 scan | less
 ```
 
 ```shell
-wlp3s0  Scan completed :
-        Cell 01 - Address: FF:FF:FF:FF:FF:FF
-                  Channel:1
-                  Frequency:2.412 GHz (Channel 1)
-                  Quality=70/70  Signal level=-8 dBm
-                  Encryption key:on
-                  ESSID:"NB"
-                  Bit Rates:1 Mb/s; 2 Mb/s; 5.5 Mb/s; 11 Mb/s; 9 Mb/s
-                            18 Mb/s; 36 Mb/s; 54 Mb/s
-                  Bit Rates:6 Mb/s; 12 Mb/s; 24 Mb/s; 48 Mb/s
-                  Mode:Master
-                  ...
-        Cell 02 - Address: ...
-        
+wlp3s0    Scan completed :
+          Cell 01 - Address: FF:FF:FF:FF:FF:FF
+                    Channel:1
+                    Frequency:2.412 GHz (Channel 1)
+                    Quality=70/70  Signal level=-8 dBm
+                    Encryption key:on
+                    ESSID:"NB"
+                    Bit Rates:1 Mb/s; 2 Mb/s; 5.5 Mb/s; 11 Mb/s; 9 Mb/s
+                              18 Mb/s; 36 Mb/s; 54 Mb/s
+                    Bit Rates:6 Mb/s; 12 Mb/s; 24 Mb/s; 48 Mb/s
+                    Mode:Master
+                    ...
+          Cell 02 - Address: ...
+          ...
+
 ```
 
 ```NB``` is the SSID of my router.
