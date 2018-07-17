@@ -29,14 +29,18 @@ sudo apt install -y wpasupplicant wireless-tools
 2. Find your netword device
 
 ```shell
-sudo ifconfig -a
+sudo iwconfig
 ```
 ```shell
-enp2s0  Link encap:...
+wlp3s0    IEEE 802.11bgn  ESSID:off/any
+          Mode:Managed  Access Point: Not-Associated   Tx-Power=20 dBm
+          Retry short limit:7   RTS thr=2347 B   Fragment thr:off
+          Encryption key:off
+          Power Management:on
 
-lo      Link encap:...
+enp2s0    no wireless extensions.
 
-wlp3s0  Link encap:...
+lo        no wireless extensions.
 
 ```
 ```wlp3s0``` is my wlan interface.
