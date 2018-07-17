@@ -1,4 +1,4 @@
-# Tweak My Own Ubuntu
+# Tweak My Own Ubuntu - 16.04 Only
 
 ![](./20180512_Ubuntu1804_Hue-add-210_00000_1.png?raw=true)
 
@@ -15,7 +15,7 @@ sudo apt install -y vim
 
 <br/>
 
-### Set a static IP and DNS servers - Not 17.10, 18.04 and newer
+### Set a static IP and DNS servers - 16.04 Only
 
 1. Which interface do I use for my static IP?
 
