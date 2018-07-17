@@ -44,7 +44,7 @@ Ref:
 ## Stuck in Ubuntu Logo after installation
 
 - Reboot
-- [Enter Grub Menu](.#access-the-grub-menu) after POST
+- [Enter Grub Menu](#access-the-grub-menu) after POST
 - Use the Up and Down arrow keys to select ```Ubuntu``` and press 'e' key
 - Find ```linux``` line and add "nomodeset" near "quiet splash" with spaces:
 
@@ -67,7 +67,7 @@ PS: These are temporary settings so all your changes will be recovered before ne
 
 PPS: DO NOT modify ```/etc/default/grub``` to apply "nomodeset" permanently if you are going to install nVIDIA driver.
 
-PPPS: This is the best chance to install the driver for your nVIDIA standalone graphics card, in some cases, [Stuck in Login Loop](.#stuck-in-login-loop) could be solved.
+PPPS: This is the best chance to install the driver for your nVIDIA standalone graphics card, in some cases, [Stuck in Login Loop](#stuck-in-login-loop) could be solved.
 
 <br/>
 
