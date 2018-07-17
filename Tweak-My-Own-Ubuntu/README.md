@@ -10,7 +10,7 @@
 
 ## Server
 
-### Things that we have to do
+### Things that we have to do first
 
 ```shell
 sudo apt update && sudo apt upgrade -y
