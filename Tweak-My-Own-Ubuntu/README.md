@@ -215,4 +215,6 @@ Ref:
 
 ### Find wallpapers
 
+## Both
+
 ### Fix time differences between ubuntu and windows dual boot
