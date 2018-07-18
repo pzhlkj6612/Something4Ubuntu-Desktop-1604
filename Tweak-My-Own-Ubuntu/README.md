@@ -40,6 +40,8 @@ systemd-analyze blame
              ... ...
 ```
 
+```networking.service``` help us with configuring network such as DHCP, but it will failed when our LAN cable disconnected or wireless router cannot be access. *So, it tries again and again until finally some part of the OS gets the message.*
+
 It's a lot of wasted time, isn't it?
 
 1. You can shorten the length of timeout.
@@ -63,7 +65,7 @@ TimeoutStartSec=5min
 ...
 ```
 
-```TimeoutStartSec``` is the key. Modifying the ```Unit File``` of system services is risky, so we need help from ```systemctl```.
+```TimeoutStartSec``` is the key. Modifying the ```Unit File``` of system services directly is risky, so we need help from ```systemctl```.
 
 ```shell
 sudo systemcrl edit networking.service
