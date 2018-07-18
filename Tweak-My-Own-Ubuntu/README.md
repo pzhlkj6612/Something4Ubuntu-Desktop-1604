@@ -4,7 +4,7 @@
 
 <br/>
 
-## Server
+## Whatever
 
 ### Things that we have to do first
 
@@ -346,10 +346,10 @@ Ref:
 
 <br/>
 
-## Desktop
+### Fix time differences between Ubuntu and Windows dual boot
+
+<br/>
+
+## Desktop Only
 
 ### Find wallpapers
-
-## Both
-
-### Fix time differences between ubuntu and windows dual boot
