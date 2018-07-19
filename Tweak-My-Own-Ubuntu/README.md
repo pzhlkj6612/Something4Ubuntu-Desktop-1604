@@ -1,6 +1,6 @@
 # Tweak My Own Ubuntu - 16.04 Only
 
-![](./20180512_Ubuntu1804_Hue-add-210_00000_1.png?raw=true)
+![](./Beaver_Wallpaper_Grey_4096x2304.png?raw=true)
 
 <br/>
 
