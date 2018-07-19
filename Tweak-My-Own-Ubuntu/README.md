@@ -93,26 +93,26 @@ TimeoutStartSec=xxx
 
 > When parsing, systemd will accept the same time span syntax. Separating spaces may be omitted. The following time units are understood:    
 >     
->  ·   usec, us    
->  ·   msec, ms    
->  ·   seconds, second, sec, s    
->  ·   minutes, minute, min, m    
->  ·   hours, hour, hr, h    
->  ·   days, day, d    
->  ·   weeks, week, w    
->  ·   months, month, M (defined as 30.44 days)    
->  ·   years, year, y (define as 365.25 days)    
+> ·&nbsp;&nbsp;&nbsp;usec, us    
+> ·&nbsp;&nbsp;&nbsp;msec, ms    
+> ·&nbsp;&nbsp;&nbsp;seconds, second, sec, s    
+> ·&nbsp;&nbsp;&nbsp;minutes, minute, min, m    
+> ·&nbsp;&nbsp;&nbsp;hours, hour, hr, h    
+> ·&nbsp;&nbsp;&nbsp;days, day, d    
+> ·&nbsp;&nbsp;&nbsp;weeks, week, w    
+> ·&nbsp;&nbsp;&nbsp;months, month, M (defined as 30.44 days)    
+> ·&nbsp;&nbsp;&nbsp;years, year, y (define as 365.25 days)    
 >     
 > If no time unit is specified, generally seconds are assumed, but some exceptions exist and are marked as such. In a few cases "ns", "nsec" is accepted too, where the granularity of the time span allows for this.    
 >     
 > Examples for valid time span specifications:    
 >     
->  2 h    
->  2hours    
->  48hr    
->  1y 12month    
->  55s500ms    
->  300ms20s 5day
+> &nbsp;&nbsp;&nbsp;&nbsp;2 h    
+> &nbsp;&nbsp;&nbsp;&nbsp;2hours    
+> &nbsp;&nbsp;&nbsp;&nbsp;48hr    
+> &nbsp;&nbsp;&nbsp;&nbsp;1y 12month    
+> &nbsp;&nbsp;&nbsp;&nbsp;55s500ms    
+> &nbsp;&nbsp;&nbsp;&nbsp;300ms20s 5day
 >     
 > 
 > *From: Ubuntu Manpage: systemd.time - Time and date specifications | 16.04*
