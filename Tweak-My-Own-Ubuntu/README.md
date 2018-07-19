@@ -114,7 +114,6 @@ TimeoutStartSec=xxx
 > &nbsp;&nbsp;&nbsp;&nbsp;55s500ms    
 > &nbsp;&nbsp;&nbsp;&nbsp;300ms20s 5day
 >     
-> 
 > *From: Ubuntu Manpage: systemd.time - Time and date specifications | 16.04*
 
 Here are some examples,
