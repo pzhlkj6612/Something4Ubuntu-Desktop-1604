@@ -347,6 +347,8 @@ Ref:
 
 <br/>
 
+### Automatic mount hard drives at boot time
+
 ### Fix time differences between Ubuntu and Windows dual boot
 
 <br/>
