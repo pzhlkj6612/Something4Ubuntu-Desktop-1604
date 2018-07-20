@@ -80,7 +80,7 @@ TimeoutStartSec=5min
 ```TimeoutStartSec``` is the key. Modifying the ```Unit File``` of system services directly is risky, so we need help from ```systemctl```.
 
 ```shell
-sudo systemcrl edit networking.service
+sudo systemctl edit networking.service
 ```
 
 ```
