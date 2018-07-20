@@ -16,6 +16,18 @@ sudo apt install -y vim
 
 <br/>
 
+### Could not get lock /var/lib/apt/lists/lock - open
+
+```
+Reading package lists... Done
+E: Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable)
+E: Unable to lock directory /var/lib/apt/lists/
+```
+
+...
+
+<br/>
+
 ### Avoid hanging on "A start job is running for Raise network interfaces (Xmins Xs / Xmins Xs)" in booting
 
 ```
@@ -337,6 +349,8 @@ wlp3s0    Scan completed :
 
 ```NB``` is the SSID of my router.
 
+...
+
 <br/>
 
 Ref:
@@ -350,6 +364,8 @@ Ref:
 ### Automatic mount hard drives at boot time
 
 ### Fix time differences between Ubuntu and Windows dual boot
+
+### Global Proxy
 
 <br/>
 
