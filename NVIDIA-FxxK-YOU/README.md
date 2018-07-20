@@ -63,11 +63,13 @@ or,
 - Press "Ctrl-X" or "F10" to apply the modification and go for boot
 - Now, you can see a normal booting process probably
 
-PS: These are temporary settings so all your changes will be recovered before next boot.
+<br/>
 
-PPS: DO NOT modify ```/etc/default/grub``` to apply "nomodeset" permanently if you are going to install nVIDIA driver.
+PS:
 
-PPPS: This is the best chance to install the driver for your nVIDIA standalone graphics card, in some cases, [Stuck in Login Loop](#stuck-in-login-loop) could be solved.
+- These are temporary settings so all your changes will be recovered before next boot.
+- DO NOT modify ```/etc/default/grub``` to apply "nomodeset" permanently if you are going to install nVIDIA driver.
+- This is the best chance to install the driver for your nVIDIA standalone graphics card, in some cases, [Stuck in Login Loop](#stuck-in-login-loop) could be solved.
 
 <br/>
 
