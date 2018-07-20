@@ -363,6 +363,54 @@ Ref:
 
 ### Automatic mount hard drives at boot time
 
+...
+
+<br/>
+
+Remember, You should use the following command to check your modified ```fstab```, unless you want to recover your system at next boot time.
+
+```shell
+sudo mount -a
+```
+
+No information will be returned when everything goes correct.
+
+If ```<mount point>``` invalid,
+
+```shell
+mount: mount point /media/sdb1 does not exist
+```
+
+```<type>``` invalid,
+
+```shell
+mount: unknown filesystem type 'exr3'
+```
+
+```<file system>``` invalid,
+
+```shell
+mount: special device /dev/sdb1 does not exist
+```
+
+or,
+
+```shell
+mount: /home is not a block device
+```
+
+PS: ```<options>```, ```<dump>``` and ```<pass>``` will not be checked probably.
+
+<br/>
+
+Ref:
+
+- []()
+- []()
+- []()
+
+<br/>
+
 ### Fix time differences between Ubuntu and Windows dual boot
 
 ### Global Proxy
