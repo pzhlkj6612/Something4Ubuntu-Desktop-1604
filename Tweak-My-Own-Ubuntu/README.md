@@ -367,7 +367,7 @@ Ref:
 
 <br/>
 
-Remember, You should use the following command to check your modified ```fstab```, unless you want to recover your system at next boot time.
+Remember, It's **necessary** to use the following command to check your modified ```fstab```, unless you want to recover your system at next boot time.
 
 ```shell
 sudo mount -a
