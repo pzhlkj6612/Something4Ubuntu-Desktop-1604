@@ -56,7 +56,13 @@ systemd-analyze blame
 
 It's a lot of wasted time, isn't it?
 
-1. You can shorten the length of timeout.
+1. You can [fix your ip address](#set-a-static-ip-and-dns-servers) instead of using DHCP
+
+2. You can let your network interface ...
+
+...
+
+3. You can shorten the length of timeout
 
 ```networking.service``` is the name of the service which *raises or downs the network interfaces configured in ```/etc/network/interfaces```*. ```Raise network interfaces``` is the ```Description``` of it. Let's type a command to show the ```Unit File``` of the service.
 
@@ -164,7 +170,9 @@ Ref:
 
 <br/>
 
-### Set a static IP and DNS servers - 16.04 Only, IPv4 Only
+### Set a static IP and DNS servers
+
+*16.04 Only, IPv4 Only*
 
 1. Which interface do I use for my static IP?
 
