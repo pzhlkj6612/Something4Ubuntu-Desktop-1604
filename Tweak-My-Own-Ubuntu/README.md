@@ -16,7 +16,7 @@ sudo apt install -y vim
 
 <br/>
 
-### Could not get lock /var/lib/apt/lists/lock - open
+### "Could not get lock /var/lib/apt/lists/lock - open"
 
 ```
 Reading package lists... Done
