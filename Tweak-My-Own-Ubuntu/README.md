@@ -372,11 +372,15 @@ Ref:
 
 ### Automatic mount hard drives at boot time
 
+#### Instruction
+
 ...
 
 <br/>
 
-Remember, It's **necessary** to use the following command to check your modified ```fstab```, unless you want to recover your system at next boot time.
+#### Additional operations
+
+Remember, It's **necessary** to use the following command to validate your modified ```fstab```, unless you want to recover your system at next boot time.
 
 ```shell
 sudo mount -a
@@ -412,9 +416,13 @@ PS: ```<options>```, ```<dump>``` and ```<pass>``` will not be checked probably.
 
 <br/>
 
+#### Fix boot failure due to incorrect fstab
+
+<br/>
+
 Ref:
 
-- []()
+- [fedora - How do you validate fstab without rebooting? - Server Fault](https://serverfault.com/questions/174181/how-do-you-validate-fstab-without-rebooting)
 - []()
 - []()
 
