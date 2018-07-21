@@ -56,13 +56,13 @@ systemd-analyze blame
 
 It's a lot of wasted time, isn't it?
 
-1. You can [fix your ip address](#set-a-static-ip-and-dns-servers) instead of using DHCP
+#### You can fix your ip address instead of using DHCP
 
-2. You can let your network interface ...
+[Set a static IP and DNS servers](#set-a-static-ip-and-dns-servers).
 
-...
+<br/>
 
-3. You can shorten the length of timeout
+#### You can shorten the length of timeout
 
 ```networking.service``` is the name of the service which *raises or downs the network interfaces configured in ```/etc/network/interfaces```*. ```Raise network interfaces``` is the ```Description``` of it. Let's type a command to show the ```Unit File``` of the service.
 
@@ -154,6 +154,37 @@ TimeoutStartSec=1year 2months 3weeks 4days 5hours 6minutes 7seconds 8msec 9usec
 **Do not set a value that is too large** even though it will be ignored.
 
 And, type ```Ctrl-X``` to exit, type ```y``` and ```Enter``` to save file. Then, reboot your system.
+
+<br/>
+
+#### (Dumb idea)You can let your network interface start as "hotplug" mode
+
+```shell
+sudo vi /etc/network/interfaces
+```
+
+```
+# This file describes the network interfaces available in your system
+# and how to activate then. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto enp2s0
+iface enp2s0 inet dhcp
+```
+
+Now, ```enp2s0``` is using ```auto```, we should relpace it with ```allow-hotplug```,
+
+```
+# The primary network interface
+allow-hotplug enp2s0
+iface enp2s0 inet dhcp
+```
 
 <br/>
 
