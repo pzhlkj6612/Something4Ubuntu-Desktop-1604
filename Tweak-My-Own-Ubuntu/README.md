@@ -428,7 +428,7 @@ lo        no wireless extensions.
 3. Bring the interface up
 
 ```shell
-sudo ifconfig wlp3s0 up
+sudo ifup wlp3s0
 ```
 
 4. Scan the world
