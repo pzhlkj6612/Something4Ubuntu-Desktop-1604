@@ -292,9 +292,13 @@ PS: Do not place multiple addresses on a single line, especially ```dns-nameserv
 3. Put your settings into effect without reboot system
 
 ```shell
-sudo ip addr flush enp2s0 && sudo systemctl restart networking.service
+sudo ip address flush enp2s0 && sudo systemctl restart networking.service
+```
+
+Then, check IP,
+
+```shell
 sudo ifconfig  -a
-cat /etc/resolv.conf
 ```
 
 ```
@@ -302,6 +306,12 @@ enp2s0    Link encap:Ethernet  HWaddr FF:FF:FF:FF:FF:FF
           inet addr:192.168.1.100  Bcast:192.168.1.255  Mask:255.255.255.0
           ...
 
+```
+
+DNS,
+
+```shell
+cat /etc/resolv.conf
 ```
 
 ```
