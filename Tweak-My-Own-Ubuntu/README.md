@@ -186,6 +186,42 @@ allow-hotplug enp2s0
 iface enp2s0 inet dhcp
 ```
 
+At last, reboot your system.
+
+<br/>
+
+PS:
+
+```allow-hotplug``` mode means:
+
+- System only detect whether the interface is available at boot time
+- After restart ```networking.service```, those "hotplug" interfaces will not be activated again and be assigned IP address automatically
+
+So,
+
+```shell
+sudo ifup enp2s0
+```
+
+No information will be returned when everything goes correct. If DHCP has been set(e.g. ```iface enp2s0 inet dhcp```),
+
+```
+Internet Systems Consortium DHCP Client 4.3.3
+Copyright 2004-2015 Internet Systems Consortium.
+All rights reserved.
+For info, please visit http://www.isc.org/software/dhcp/
+
+Listening on LPF/enp2s0/FF:FF:FF:FF:FF:FF
+Sending on   LPF/enp2s0/FF:FF:FF:FF:FF:FF
+Sending on   Socket/fallback
+DHCPDISCOVER on enp2s0 to 255.255.255.255 port 67 interval 3 (xid=0x12aae29)
+DHCPDISCOVER on enp2s0 to 255.255.255.255 port 67 interval ...
+DHCPREQUEST of 192.168.1.100 on enp2s0 to 255.255.255.255 port 67 (xid=0x29ae2a01)
+DHCPOFFER of 192.168.1.100 from 192.168.1.1
+DHCPACK of 192.168.1.100 from 192.168.1.1
+bound to 192.168.1.100 -- renewal in 99887766554433221100 seconds.
+```
+
 <br/>
 
 Ref:
@@ -194,10 +230,32 @@ Ref:
 - [networking - Very slow boot time ubuntu - A start job is running for Raise network interfaces - Ask Ubuntu](https://askubuntu.com/questions/841112/very-slow-boot-time-ubuntu-a-start-job-is-running-for-raise-network-interfaces)
 - [systemd-analyze](https://www.freedesktop.org/software/systemd/man/systemd-analyze.html)
 - [16.04 - What is the networking.service? - Ask Ubuntu](https://askubuntu.com/questions/850339/what-is-the-networking-service)
+
+<br/>
+
 - [configuration - How do I override or configure systemd services? - Ask Ubuntu](https://askubuntu.com/questions/659267/how-do-i-override-or-configure-systemd-services)
 - [TimeoutStartSec= # systemd.service](https://www.freedesktop.org/software/systemd/man/systemd.service.html#TimeoutStartSec=)
 - [Ubuntu Manpage: systemd.time - Time and date specifications | 16.04](http://manpages.ubuntu.com/manpages/xenial/man7/systemd.time.7.html)
 - [Displaying a Unit File # How To Use Systemctl to Manage Systemd Services and Units | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units#displaying-a-unit-file)
+
+<br/>
+
+- [networking - Good detailed explanation of /etc/network/interfaces syntax? - Unix &amp; Linux Stack Exchange](https://unix.stackexchange.com/questions/128439/good-detailed-explanation-of-etc-network-interfaces-syntax/128662)
+- [debian - What is a hotplug event from the interface? - Unix &amp; Linux Stack Exchange](https://unix.stackexchange.com/questions/192671/what-is-a-hotplug-event-from-the-interface)
+- [Re: in /etc/network/interfaces:  &quot;auto&quot; vs &quot;allow-hotplug&quot;](https://lists.debian.org/debian-user/2017/09/msg00911.html)
+- [dhclient(8) - Linux man page](https://linux.die.net/man/8/dhclient)
+- [wireless - What&#39;s the difference between `ifconfig`, `interfaces`, `ifup` and `ifdown`? - Ask Ubuntu](https://askubuntu.com/questions/567683/whats-the-difference-between-ifconfig-interfaces-ifup-and-ifdown)
+- [What is the difference between &#039;ifconfig up eth0&#039; and &#039;ifup eth0&#039;? - Red Hat Customer Portal](https://access.redhat.com/solutions/27166)
+- [\[SOLVED\] Difference between ifconfig down and ifdown](https://www.linuxquestions.org/questions/linux-networking-3/difference-between-ifconfig-down-and-ifdown-4175440247/)
+- [debian - Can&#39;t ifdown eth0 (main interface) - Unix &amp; Linux Stack Exchange](https://unix.stackexchange.com/questions/50602/cant-ifdown-eth0-main-interface)
+- [\[server\] Cannot restart networking service](https://ubuntuforums.org/showthread.php?t=2218026)
+
+<br/>
+
+Ref*:
+
+- [networking - ifdown interface not configured (Debian 6) - Server Fault](https://serverfault.com/questions/549129/ifdown-interface-not-configured-debian-6)
+- [\[SOLVED\] ifup and ifdown commands don't work.](https://www.linuxquestions.org/questions/linux-newbie-8/ifup-and-ifdown-commands-don%27t-work-915696/)
 
 <br/>
 
