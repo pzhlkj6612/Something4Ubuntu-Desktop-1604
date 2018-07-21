@@ -381,6 +381,10 @@ nameserver 8.8.8.8
 
 <br/>
 
+If something goes wrong, just reboot your system :(
+
+<br/>
+
 Ref:
 - [Network configuration on Ubuntu 12.04 - 17.04 \(incl. Ubuntu 16.04 LTS\) # Linux Basics - Set a Static IP on Ubuntu](https://www.howtoforge.com/linux-basics-set-a-static-ip-on-ubuntu#ubuntu-incl-ubuntu-lts)
 - [gather-info # How to set a static IP in Ubuntu - Ubuntu Network Configuration](http://www.sudo-juice.com/how-to-set-a-static-ip-in-ubuntu-network-confirguration/#gather-info)
