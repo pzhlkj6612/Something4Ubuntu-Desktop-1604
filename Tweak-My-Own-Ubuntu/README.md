@@ -580,6 +580,20 @@ Ref*:
 
 ### Global Proxy
 
+### Change Linux console screen blanking behavior
+
+```shell
+
+```
+
+```
+
+```
+
+**DO NOT** modify ```/etc/default/grub``` to reach it!
+
+[My computer boots to a black screen, what options do I have to fix it? - Ask Ubuntu](https://askubuntu.com/questions/162075/my-computer-boots-to-a-black-screen-what-options-do-i-have-to-fix-it)
+
 <br/>
 
 ## Desktop Only
