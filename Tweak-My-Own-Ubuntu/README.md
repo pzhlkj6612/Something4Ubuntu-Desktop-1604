@@ -556,6 +556,24 @@ Ref:
 
 <br/>
 
+Ref*:
+
+- [Ubuntu: Mount The Drive From Command Line - nixCraft](https://www.cyberciti.biz/faq/mount-drive-from-command-line-ubuntu-linux/)
+- [unity - How to automatically mount 2nd internal Hard Drive - Ask Ubuntu](https://askubuntu.com/questions/769974/how-to-automatically-mount-2nd-internal-hard-drive)
+- [automount - How to make partitions mount at startup? - Ask Ubuntu](https://askubuntu.com/questions/164926/how-to-make-partitions-mount-at-startup)
+- [A complete fstab guide - Linux Stall](http://www.linuxstall.com/fstab/)
+- [Mount - Community Help Wiki](https://help.ubuntu.com/community/Mount)
+- [Fstab - Community Help Wiki](https://help.ubuntu.com/community/Fstab)
+
+<br/>
+
+- [\[ubuntu\] fstab typo - recovery advice needed](https://ubuntuforums.org/showthread.php?t=1571596)
+- [rhel - How to fix boot failure due to incorrect fstab? - Unix &amp; Linux Stack Exchange](https://unix.stackexchange.com/questions/44027/how-to-fix-boot-failure-due-to-incorrect-fstab)
+- [How to Fix &quot;failed to mount /etc/fstab&quot; Error in Linux](https://www.tecmint.com/fix-failed-to-mount-etc-fstab-error-in-linux/)
+- [Edit &quot;read-only&quot; /etc/fstab from &quot;System Recovery#&quot;  (without boot cd?)](https://www.linuxquestions.org/questions/linux-general-1/edit-read-only-etc-fstab-from-system-recovery-without-boot-cd-515239/)
+
+<br/>
+
 ### Fix time differences between Ubuntu and Windows dual boot
 
 ### Global Proxy
