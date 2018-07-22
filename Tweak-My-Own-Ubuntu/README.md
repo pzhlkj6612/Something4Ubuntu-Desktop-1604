@@ -2,6 +2,8 @@
 
 ![](./Beaver_Wallpaper_Grey_4096x2304.png?raw=true)
 
+*I can eat glass, it does not hurt me.*
+
 <br/>
 
 ## Whatever
