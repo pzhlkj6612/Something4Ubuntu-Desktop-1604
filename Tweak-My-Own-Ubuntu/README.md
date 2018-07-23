@@ -34,8 +34,6 @@ Ref:
 
 - [How to see log to find a boot problem - Ask Ubuntu](https://askubuntu.com/questions/91286/how-to-see-log-to-find-a-boot-problem)
 
-<br/>
-
 Ref*:
 
 - [How to get the boot logs for a 16.04 system that won&#39;t boot? - Ask Ubuntu](https://askubuntu.com/questions/872822/how-to-get-the-boot-logs-for-a-16-04-system-that-wont-boot)
@@ -276,8 +274,6 @@ Ref:
 - [\[SOLVED\] Difference between ifconfig down and ifdown](https://www.linuxquestions.org/questions/linux-networking-3/difference-between-ifconfig-down-and-ifdown-4175440247/)
 - [debian - Can&#39;t ifdown eth0 (main interface) - Unix &amp; Linux Stack Exchange](https://unix.stackexchange.com/questions/50602/cant-ifdown-eth0-main-interface)
 - [\[server\] Cannot restart networking service](https://ubuntuforums.org/showthread.php?t=2218026)
-
-<br/>
 
 Ref*:
 
@@ -556,8 +552,6 @@ Ref:
 - []()
 - []()
 
-<br/>
-
 Ref*:
 
 - [Ubuntu: Mount The Drive From Command Line - nixCraft](https://www.cyberciti.biz/faq/mount-drive-from-command-line-ubuntu-linux/)
@@ -578,7 +572,11 @@ Ref*:
 
 ### Fix time differences between Ubuntu and Windows dual boot
 
+<br/>
+
 ### Global Proxy
+
+<br/>
 
 ### Change Linux console screen blanking behavior
 
