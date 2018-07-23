@@ -595,7 +595,11 @@ setterm --blank 0
 Ref:
 
 - [command line - How do I disable the blank console &quot;screensaver&quot; on Ubuntu Server? - Ask Ubuntu](https://askubuntu.com/questions/138918/how-do-i-disable-the-blank-console-screensaver-on-ubuntu-server)
-- [Change Linux console screen blanking behavior - Super User](https://superuser.com/questions/152347/change-linux-console-screen-blanking-behavior/154388#154388)
+- [Change Linux console screen blanking behavior - Super User](https://superuser.com/questions/152347/change-linux-console-screen-blanking-behavior/)
+
+<br/>
+
+- [basename(1) - Linux man page](https://linux.die.net/man/1/basename)
 
 Ref*:
 
