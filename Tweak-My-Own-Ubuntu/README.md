@@ -176,7 +176,7 @@ TimeoutStartSec=21min 57sec
 TimeoutStartSec=1year 2months 3weeks 4days 5hours 6minutes 7seconds 8msec 9usec
 ```
 
-**Do not set a value that is too large** even though it will be ignored.
+**DO NOT** set a value that is too large even though it will be ignored.
 
 And, type ```Ctrl-X``` to exit, type ```y``` and ```Enter``` to save file. Then, reboot your system.
 
@@ -368,7 +368,7 @@ dns-nameservers 8.8.4.4
 dns-nameservers 8.8.8.8
 ```
 
-PS: Do not place multiple addresses on a single line, especially ```dns-nameservers```.
+PS: **DO NOT** place multiple addresses on a single line, especially ```dns-nameservers```.
 
 3. Put your settings into effect without reboot system
 
@@ -506,7 +506,7 @@ Ref:
 
 #### Additional operations
 
-Remember, It's **necessary** to use the following command to validate your modified ```fstab```, unless you want to recover your system at next boot time.
+Remember, It's **NECESSARY** to use the following command to validate your modified ```fstab```, unless you want to recover your system at next boot time.
 
 ```shell
 sudo mount -a
