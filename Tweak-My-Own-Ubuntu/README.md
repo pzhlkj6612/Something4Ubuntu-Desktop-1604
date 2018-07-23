@@ -584,6 +584,8 @@ Ref*:
 setterm --blank 0
 ```
 
+You can append it to your ```~/.bashrc```.
+
 <br/>
 
 **DO NOT** modify ```/etc/default/grub``` to reach it!
