@@ -504,6 +504,8 @@ Ref:
 
 ...
 
+**DO NOT** modify ```fstab``` through ssh unless you know what you are doing.
+
 <br/>
 
 #### Additional operations
