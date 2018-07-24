@@ -35,6 +35,7 @@ dmesg
 Ref:
 
 - [How to see log to find a boot problem - Ask Ubuntu](https://askubuntu.com/questions/91286/how-to-see-log-to-find-a-boot-problem)
+- [How To Use Journalctl to View and Manipulate Systemd Logs | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)
 
 Ref*:
 
