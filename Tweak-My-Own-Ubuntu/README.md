@@ -542,7 +542,7 @@ sudo mkdir /mnt/sdc1 /mnt/sdd1
 Then, look up these partitions' information, it will be used later,
 
 ```shell
-blkid /dev/sdc1 /dev/sdd1
+sudo blkid /dev/sdc1 /dev/sdd1
 ```
 
 ```
