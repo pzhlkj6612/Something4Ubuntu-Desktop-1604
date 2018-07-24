@@ -533,13 +533,13 @@ sdd      8:48   0 149.1G  0 disk
 
 ```/dev/sdxX``` are the disk partitions which exist in my system.
 
-I want to mount ```/dev/sdc1``` to ```/mnt/sdc1``` folder, mount ```/dev/sdd1``` to ```mnt/sdd1``` folder, so,
+I want to mount ```/dev/sdc1``` to ```/mnt/sdc1``` folder, mount ```/dev/sdd1``` to ```/mnt/sdd1``` folder, so,
 
 ```shell
 sudo mkdir /mnt/sdc1 /mnt/sdd1
 ```
 
-Then, look up these partitions' ```UUID``` and ```TYPE```, it will be used later,
+Then, look up these partitions' information, it will be used later,
 
 ```shell
 blkid /dev/sdc1 /dev/sdd1
@@ -549,6 +549,8 @@ blkid /dev/sdc1 /dev/sdd1
 /dev/sdc1: UUID="8da8924d-aca0-45f0-b016-927af9b9a01a" TYPE="ext4" PARTUUID="0000ffff-01"
 /dev/sdd1: UUID="054fe321-322d-4aa1-ab98-31cda7aeeedf" TYPE="ext4" PARTUUID="ffff0000-01"
 ```
+
+We need ```UUID``` and ```TYPE```.
 
 Let's modfiy ```/etc/fstab```! Do backing up first,
 
@@ -584,6 +586,13 @@ Add following content,
 ```
 /dev/sdc1 /mnt/sdc1 ext4 defaults 0 2
 /dev/sdd1 /mnt/sdd1 ext4 defaults 0 2
+```
+
+or,
+
+```
+UUID=8da8924d-aca0-45f0-b016-927af9b9a01a /mnt/sdc1 ext4 defaults 0 2
+UUID="054fe321-322d-4aa1-ab98-31cda7aeeedf" /mnt/sdd1 ext4 defaults 0 2
 ```
 
 Save it, reboot your system, type,
