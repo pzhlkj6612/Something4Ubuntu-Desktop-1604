@@ -4,7 +4,7 @@
 
 *I can eat glass, it does not hurt me.*
 
-*我能切开西红柿且割伤手指。*
+*我能切开西红柿且伤到手指。*
 
 <br/>
 
