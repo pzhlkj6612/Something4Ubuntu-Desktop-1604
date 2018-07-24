@@ -6,7 +6,7 @@ Actually, it was "Operating System Practices".
 
 ## [Tweak My Own Ubuntu](./Tweak-My-Own-Ubuntu)
 
-It's my fault. There is some content about configuring and customizing Ubuntu Desktop/Server 1604 here.
+There are some contents about configuring and customizing Ubuntu Desktop/Server, 16.04 only.
 
 ## [Install Ubuntu on nVIDIA Notebook](./NVIDIA-FxxK-YOU)
 
