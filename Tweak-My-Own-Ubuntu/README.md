@@ -688,6 +688,14 @@ Just modify your ```fstab``` file, save it, and run ```mount -a``` to do checkin
 
 Ref:
 
+- [How to get hard disk information on linux terminal? - Unix &amp; Linux Stack Exchange](https://unix.stackexchange.com/questions/273971/how-to-get-hard-disk-information-on-linux-terminal)
+- [how to list all hard disks in linux from command line &#8211; lost saloon](http://www.lostsaloon.com/technology/how-to-list-disks-in-linux/)
+- [linux - Differences between /dev/sda and /dev/sda1 - Server Fault](https://serverfault.com/questions/338937/differences-between-dev-sda-and-dev-sda1)
+- [blkid(8) - Linux man page](https://linux.die.net/man/8/blkid)
+- [24.4.2. Using the blkid Command - Red Hat Customer Portal](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/deployment_guide/s2-sysinfo-filesystems-blkid)
+
+<br/>
+
 - [fedora - How do you validate fstab without rebooting? - Server Fault](https://serverfault.com/questions/174181/how-do-you-validate-fstab-without-rebooting)
 
 <br/>
