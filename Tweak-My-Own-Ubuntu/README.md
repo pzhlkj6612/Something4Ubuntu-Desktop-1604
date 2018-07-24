@@ -546,13 +546,46 @@ PS: ```<options>```, ```<dump>``` and ```<pass>``` will not be checked probably.
 
 #### Fix boot failure due to incorrect fstab
 
+When you boot your system,
+
+```
+...
+[  OK  ] Started File System Check on /dev/disk/by-uuid/550e8400-e29b-41d4-a716-446655440000. 
+         Mounting /boot...
+[  OK  ] Mounted /boot.
+[ ***  ] A start job is running for dev-xxx.device (1min 23s / 1min 30s)
+```
+
+Then,
+
+```
+...
+[ TIME ] Timed out waiting for device dev.device.
+[DEPEND] Dependency failed for /home.
+[DEPEND] Dependency failed for Local File Systems.
+[DEPEND] Dependency failed for File System Check on /dev.
+...
+Welcome to emergency mode! After logging in, type "journalctl -xb" to view
+system logs, "systemctl reboot" to reboot, "systemctl default" or ^D to
+try again to boot into default mode.
+Press Enter for maintenance
+(or press Control-D to continue):
+```
+
+Press "Enter", you will log in system as root user.
+
+Just modify your ```fstab``` file, save it, and run ```mount -a``` to do checking, reboot your system.
+
 <br/>
 
 Ref:
 
 - [fedora - How do you validate fstab without rebooting? - Server Fault](https://serverfault.com/questions/174181/how-do-you-validate-fstab-without-rebooting)
-- []()
-- []()
+
+<br/>
+
+- [\[ubuntu\] fstab typo - recovery advice needed](https://ubuntuforums.org/showthread.php?t=1571596)
+- [How to Fix &quot;failed to mount /etc/fstab&quot; Error in Linux](https://www.tecmint.com/fix-failed-to-mount-etc-fstab-error-in-linux/)
 
 Ref*:
 
@@ -565,10 +598,16 @@ Ref*:
 
 <br/>
 
-- [\[ubuntu\] fstab typo - recovery advice needed](https://ubuntuforums.org/showthread.php?t=1571596)
 - [rhel - How to fix boot failure due to incorrect fstab? - Unix &amp; Linux Stack Exchange](https://unix.stackexchange.com/questions/44027/how-to-fix-boot-failure-due-to-incorrect-fstab)
-- [How to Fix &quot;failed to mount /etc/fstab&quot; Error in Linux](https://www.tecmint.com/fix-failed-to-mount-etc-fstab-error-in-linux/)
 - [Edit &quot;read-only&quot; /etc/fstab from &quot;System Recovery#&quot;  (without boot cd?)](https://www.linuxquestions.org/questions/linux-general-1/edit-read-only-etc-fstab-from-system-recovery-without-boot-cd-515239/)
+
+Ref**:
+
+- [boot - Repairing the FSTAB - Ask Ubuntu](https://askubuntu.com/questions/83172/repairing-the-fstab)
+- [boot - Accidentally deleted /etc/fstab file - Ask Ubuntu](https://askubuntu.com/questions/435965/accidentally-deleted-etc-fstab-file)
+- [Destroyed fstab file by mistake! Need to restore it - Ask Ubuntu](https://askubuntu.com/questions/516442/destroyed-fstab-file-by-mistake-need-to-restore-it)
+- [boot - How to restore fstab file - Ask Ubuntu](https://askubuntu.com/questions/814811/how-to-restore-fstab-file)
+- [10.04 - How to rebuild fstab automatically - Ask Ubuntu](https://askubuntu.com/questions/81726/how-to-rebuild-fstab-automatically)
 
 <br/>
 
