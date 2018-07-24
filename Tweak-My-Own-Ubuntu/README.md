@@ -611,6 +611,11 @@ Ref**:
 
 <br/>
 
+- [boot - A start job is running for dev-disk-by x2duuid-ad0b043b\\x2d404c... .device (7s / 1min 30s) - Ask Ubuntu](https://askubuntu.com/questions/956042/a-start-job-is-running-for-dev-disk-by-x2duuid-ad0b043b-x2d404c-device-7s)
+- [boot - What is dev-sda.device in systemd-analyze, can i disable it? - Ask Ubuntu](https://askubuntu.com/questions/948748/what-is-dev-sda-device-in-systemd-analyze-can-i-disable-it)
+
+<br/>
+
 ### Fix time differences between Ubuntu and Windows dual boot
 
 <br/>
