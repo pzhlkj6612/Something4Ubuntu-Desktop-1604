@@ -502,13 +502,110 @@ Ref:
 
 #### Instruction
 
-...
+Browse your hard disks,
+
+```shell
+sudo lshw -short -class disk
+```
+
+```
+H/W path         Device      Class          Description
+=======================================================
+/0/63/0.0.0      /dev/sda    disk           128GB TS128GSSD370S
+/0/64/0.0.0      /dev/sdb    disk           500GB WDC WD5000AAKX-0
+/0/65/0.0.0      /dev/sdc    disk           500GB ST3500414CS
+/0/66/0.0.0      /dev/sdd    disk           160GB WDC WD1600BEVS-0
+```
+
+Browse the partitions in specific hard disk,
+
+```shell
+lsblk /dev/sdc /dev/sdd
+```
+
+```
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sdc      8:32   0 465.8G  0 disk
+└─sdc1   8:33   0 465.8G  0 part
+sdd      8:48   0 149.1G  0 disk
+└─sdd1   8:49   0 149.1G  0 part
+```
+
+```/dev/sdxX``` are the disk partitions which exist in my system.
+
+I want to mount ```/dev/sdc1``` to ```/mnt/sdc1``` folder, mount ```/dev/sdd1``` to ```mnt/sdd1``` folder, so,
+
+```shell
+sudo mkdir /mnt/sdc1 /mnt/sdd1
+```
+
+Then, look up these partitions' ```UUID``` and ```TYPE```, it will be used later,
+
+```shell
+blkid /dev/sdc1 /dev/sdd1
+```
+
+```
+/dev/sdc1: UUID="8da8924d-aca0-45f0-b016-927af9b9a01a" TYPE="ext4" PARTUUID="0000ffff-01"
+/dev/sdd1: UUID="054fe321-322d-4aa1-ab98-31cda7aeeedf" TYPE="ext4" PARTUUID="ffff0000-01"
+```
+
+Let's modfiy ```/etc/fstab```! Do backing up first,
+
+```shell
+sudo cp /etc/fstab /etc/fstab_$(date -Iseconds) && ls -l /etc/fstab*
+```
+
+```
+-rw-r--r-- 1 root root 745 Jul 23 23:15 /etc/fstab
+-rw-r--r-- 1 root root 745 Jul 24 18:14 /etc/fstab_2018-07-24T18:14:52+08:00
+```
+
+```shell
+sudo vi /etc/fstab
+```
+
+```
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system>                              <mount point> <type> <options>         <dump>  <pass>
+/dev/mapper/ubuntu--vg-root                  /             ext4   errors=remount-ro 0       1
+# /boot was on /dev/sda1 during installation
+UUID=d7cfc213-c593-4465-9862-0ea0ba06d34f    /boot         ext2   defaults          0       2
+/dev/mapper/ubuntu--vg-swap_1                none          swap   sw                0       0
+```
+
+Add following content,
+
+```
+/dev/sdc1 /mnt/sdc1 ext4 defaults 0 2
+/dev/sdd1 /mnt/sdd1 ext4 defaults 0 2
+```
+
+Save it, reboot your system, type,
+
+```shell
+df -h
+```
+
+```
+Filesystem                   Size  Used Avail Use% Mounted on
+...                          ...   ...  ...   ...  ...
+/dev/sdd1                    147G   60M  140G   1% /mnt/sdd1
+/dev/sdc1                    459G   70M  435G   1% /mnt/sdc1
+```
+
+<br/>
 
 **DO NOT** modify ```fstab``` through ssh unless you know what you are doing.
 
 <br/>
 
-#### Additional operations
+#### Additional but useful operations
 
 Remember, It's **NECESSARY** to use the following command to validate your modified ```fstab```, unless you want to recover your system at next boot time.
 
