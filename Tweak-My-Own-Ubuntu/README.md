@@ -688,6 +688,10 @@ Just modify your ```fstab``` file, save it, and run ```mount -a``` to do checkin
 
 Ref:
 
+- [unity - How to automatically mount 2nd internal Hard Drive - Ask Ubuntu](https://askubuntu.com/questions/769974/how-to-automatically-mount-2nd-internal-hard-drive)
+- [automount - How to make partitions mount at startup? - Ask Ubuntu](https://askubuntu.com/questions/164926/how-to-make-partitions-mount-at-startup)
+- [A complete fstab guide - Linux Stall](http://www.linuxstall.com/fstab/)
+- [Fstab - Community Help Wiki](https://help.ubuntu.com/community/Fstab)
 - [How to get hard disk information on linux terminal? - Unix &amp; Linux Stack Exchange](https://unix.stackexchange.com/questions/273971/how-to-get-hard-disk-information-on-linux-terminal)
 - [how to list all hard disks in linux from command line &#8211; lost saloon](http://www.lostsaloon.com/technology/how-to-list-disks-in-linux/)
 - [linux - Differences between /dev/sda and /dev/sda1 - Server Fault](https://serverfault.com/questions/338937/differences-between-dev-sda-and-dev-sda1)
@@ -706,11 +710,7 @@ Ref:
 Ref*:
 
 - [Ubuntu: Mount The Drive From Command Line - nixCraft](https://www.cyberciti.biz/faq/mount-drive-from-command-line-ubuntu-linux/)
-- [unity - How to automatically mount 2nd internal Hard Drive - Ask Ubuntu](https://askubuntu.com/questions/769974/how-to-automatically-mount-2nd-internal-hard-drive)
-- [automount - How to make partitions mount at startup? - Ask Ubuntu](https://askubuntu.com/questions/164926/how-to-make-partitions-mount-at-startup)
-- [A complete fstab guide - Linux Stall](http://www.linuxstall.com/fstab/)
 - [Mount - Community Help Wiki](https://help.ubuntu.com/community/Mount)
-- [Fstab - Community Help Wiki](https://help.ubuntu.com/community/Fstab)
 
 <br/>
 
