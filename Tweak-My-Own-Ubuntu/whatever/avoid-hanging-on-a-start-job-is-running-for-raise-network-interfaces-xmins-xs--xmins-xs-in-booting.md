@@ -30,7 +30,7 @@ It's a lot of wasted time, isn't it?
 
 #### You can fix your ip address instead of using DHCP
 
-[Set a static IP and DNS servers](#set-a-static-ip-and-dns-servers).
+[Set a static IP and DNS servers](./set-a-static-ip-and-dns-servers.md).
 
 <br/>
 
