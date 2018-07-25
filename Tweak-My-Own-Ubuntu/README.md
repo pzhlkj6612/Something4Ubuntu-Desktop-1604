@@ -67,7 +67,7 @@ Ref:
 - [How to see log to find a boot problem - Ask Ubuntu](https://askubuntu.com/questions/91286/how-to-see-log-to-find-a-boot-problem)
 - [How To Use Journalctl to View and Manipulate Systemd Logs | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)
 
-Ref*:
+Ref++:
 
 - [How to get the boot logs for a 16.04 system that won&#39;t boot? - Ask Ubuntu](https://askubuntu.com/questions/872822/how-to-get-the-boot-logs-for-a-16-04-system-that-wont-boot)
 - [linux - What is the difference between dmesg and journalctl - Unix &amp; Linux Stack Exchange](https://unix.stackexchange.com/questions/367146/what-is-the-difference-between-dmesg-and-journalctl)
@@ -308,7 +308,7 @@ Ref:
 - [debian - Can&#39;t ifdown eth0 (main interface) - Unix &amp; Linux Stack Exchange](https://unix.stackexchange.com/questions/50602/cant-ifdown-eth0-main-interface)
 - [\[server\] Cannot restart networking service](https://ubuntuforums.org/showthread.php?t=2218026)
 
-Ref*:
+Ref++:
 
 - [networking - ifdown interface not configured (Debian 6) - Server Fault](https://serverfault.com/questions/549129/ifdown-interface-not-configured-debian-6)
 - [\[SOLVED\] ifup and ifdown commands don't work.](https://www.linuxquestions.org/questions/linux-newbie-8/ifup-and-ifdown-commands-don%27t-work-915696/)
@@ -450,7 +450,7 @@ Ref:
 - [ip-addressing # Network Configuration](https://help.ubuntu.com/lts/serverguide/network-configuration.html#ip-addressing)
 - [Command-line to list DNS servers used by my system - Ask Ubuntu](https://askubuntu.com/questions/152593/command-line-to-list-dns-servers-used-by-my-system)
 
-Ref*:
+Ref++:
 
 - [Network Configuration](https://help.ubuntu.com/lts/serverguide/network-configuration.html)
 
@@ -738,7 +738,7 @@ Ref:
 - [\[ubuntu\] fstab typo - recovery advice needed](https://ubuntuforums.org/showthread.php?t=1571596)
 - [How to Fix &quot;failed to mount /etc/fstab&quot; Error in Linux](https://www.tecmint.com/fix-failed-to-mount-etc-fstab-error-in-linux/)
 
-Ref*:
+Ref++:
 
 - [Ubuntu: Mount The Drive From Command Line - nixCraft](https://www.cyberciti.biz/faq/mount-drive-from-command-line-ubuntu-linux/)
 - [Mount - Community Help Wiki](https://help.ubuntu.com/community/Mount)
@@ -748,7 +748,7 @@ Ref*:
 - [rhel - How to fix boot failure due to incorrect fstab? - Unix &amp; Linux Stack Exchange](https://unix.stackexchange.com/questions/44027/how-to-fix-boot-failure-due-to-incorrect-fstab)
 - [Edit &quot;read-only&quot; /etc/fstab from &quot;System Recovery#&quot;  (without boot cd?)](https://www.linuxquestions.org/questions/linux-general-1/edit-read-only-etc-fstab-from-system-recovery-without-boot-cd-515239/)
 
-Ref**:
+Ref#:
 
 - [boot - Repairing the FSTAB - Ask Ubuntu](https://askubuntu.com/questions/83172/repairing-the-fstab)
 - [boot - Accidentally deleted /etc/fstab file - Ask Ubuntu](https://askubuntu.com/questions/435965/accidentally-deleted-etc-fstab-file)
@@ -796,7 +796,7 @@ Ref:
 
 - [basename(1) - Linux man page](https://linux.die.net/man/1/basename)
 
-Ref*:
+Ref++:
 
 - [ubuntu - How do I permanently disable Linux&#39;s console screen saver, system-wide? - Server Fault](https://serverfault.com/questions/137728/how-do-i-permanently-disable-linuxs-console-screen-saver-system-wide)
 
