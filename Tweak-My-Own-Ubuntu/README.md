@@ -19,13 +19,13 @@ I like using ```vim``` to edit file, you can use ```nano```, or what you favorit
 - Whatever
   - [#](./whatever/things-that-we-have-to-do-first.md) | Things that we have to do first
   - [#](./whatever/get-boot-log.md) | Get boot log
-  - [#](./whatever/could-not-get-lock-varlibaptlistslock---open.md) | "Could not get lock /var/lib/apt/lists/lock - open" <Unfinished>
+  - [#](./whatever/could-not-get-lock-varlibaptlistslock---open.md) | "Could not get lock /var/lib/apt/lists/lock - open" \<Unfinished\>
   - [#](./whatever/avoid-hanging-on-a-start-job-is-running-for-raise-network-interfaces-xmins-xs--xmins-xs-in-booting.md) | Avoid hanging on "A start job is running for Raise network interfaces (Xmins Xs / Xmins Xs)" in booting
   - [#](./whatever/set-a-static-ip-and-dns-servers.md) | Set a static IP and DNS servers
-  - [#](./whatever/get-wireless-network.md) | Get wireless network <Unfinished>
+  - [#](./whatever/get-wireless-network.md) | Get wireless network \<Unfinished\>
   - [#](./whatever/automatic-mount-hard-drives-at-boot-time.md) | Automatic mount hard drives at boot time
-  - [#](./whatever/fix-time-differences-between-ubuntu-and-windows-dual-boot.md) | Fix time differences between Ubuntu and Windows dual boot <Unfinished>
-  - [#](./whatever/global-proxy.md) | Global Proxy <Unfinished>
+  - [#](./whatever/fix-time-differences-between-ubuntu-and-windows-dual-boot.md) | Fix time differences between Ubuntu and Windows dual boot \<Unfinished\>
+  - [#](./whatever/global-proxy.md) | Global Proxy \<Unfinished\>
   - [#](./whatever/change-linux-console-screen-blanking-behavior.md) | Change Linux console screen blanking behavior
 - Desktop Only
   - [#](./desktop-only/find-wallpapers.md) | Find wallpapers
