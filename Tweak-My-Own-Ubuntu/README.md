@@ -16,25 +16,19 @@ I like using ```vim``` to edit file, you can use ```nano```, or what you favorit
 
 ## Catalog
 
-- [#](#whatever) | Whatever
-    - [#](#things-that-we-have-to-do-first) | Things that we have to do first
-    - [#](#get-boot-log) | Get boot log
-    - [#](#could-not-get-lock-varlibaptlistslock---open) | "Could not get lock /var/lib/apt/lists/lock - open"
-    - [#](#avoid-hanging-on-a-start-job-is-running-for-raise-network-interfaces-xmins-xs--xmins-xs-in-booting) | Avoid hanging on "A start job is running for Raise network interfaces (Xmins Xs / Xmins Xs)" in booting
-        - [#](#you-can-fix-your-ip-address-instead-of-using-dhcp) | You can fix your ip address instead of using DHCP
-        - [#](#you-can-shorten-the-length-of-timeout) | You can shorten the length of timeout
-        - [#](#dumb-ideayou-can-let-your-network-interface-start-as-hotplug-mode) | (Dumb idea)You can let your network interface start as "hotplug" mode
-    - [#](#set-a-static-ip-and-dns-servers) | Set a static IP and DNS servers
-    - [#](#get-wireless-network) | Get wireless network
-    - [#](#automatic-mount-hard-drives-at-boot-time) | Automatic mount hard drives at boot time
-        - [#](#instruction) | Instruction
-        - [#](#additional-but-useful-operations) | Additional but useful operations
-        - [#](#fix-boot-failure-due-to-incorrect-fstab) | Fix boot failure due to incorrect fstab
-    - [#]() | 
-    - [#]() | 
-    - [#](#change-linux-console-screen-blanking-behavior) | Change Linux console screen blanking behavior
-- [#](#desktop-only) | Desktop Only
-    - [#](#find-wallpapers) | Find wallpapers
+- Whatever
+  - [#](./whatever/things-that-we-have-to-do-first.md) | Things that we have to do first
+  - [#](./whatever/get-boot-log.md) | Get boot log
+  - [#](./whatever/could-not-get-lock-varlibaptlistslock---open.md) | "Could not get lock /var/lib/apt/lists/lock - open"
+  - [#](./whatever/avoid-hanging-on-a-start-job-is-running-for-raise-network-interfaces-xmins-xs--xmins-xs-in-booting.md) | Avoid hanging on "A start job is running for Raise network interfaces (Xmins Xs / Xmins Xs)" in booting
+  - [#](./whatever/set-a-static-ip-and-dns-servers.md) | Set a static IP and DNS servers
+  - [#](./whatever/get-wireless-network.md) | Get wireless network
+  - [#](./whatever/automatic-mount-hard-drives-at-boot-time.md) | Automatic mount hard drives at boot time
+  - [#]() | 
+  - [#]() | 
+  - [#](./whatever/change-linux-console-screen-blanking-behavior.md) | Change Linux console screen blanking behavior
+- Desktop Only
+  - [#](./desktop-only/find-wallpapers.md) | Find wallpapers
 
 <br/>
 
