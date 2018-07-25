@@ -10,7 +10,7 @@
 
 ## First of all
 
-I like using ```vim``` to edit file, you can use ```nano```, or what you favorite.
+I like using ```vim``` to edit file, you can use ```nano```, or what your favorite.
 
 <br/>
 
