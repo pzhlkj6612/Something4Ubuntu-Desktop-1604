@@ -8,6 +8,12 @@
 
 <br/>
 
+## First of all
+
+I like using ```vim``` to edit file, you can use ```nano```, or what you favorite.
+
+<br/>
+
 ## Whatever
 
 ### Things that we have to do first
