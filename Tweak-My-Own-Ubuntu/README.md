@@ -32,7 +32,7 @@ I like using ```vim``` to edit file, you can use ```nano```, or what you favorit
         - [#](#fix-boot-failure-due-to-incorrect-fstab) | Fix boot failure due to incorrect fstab
     - [#]() | 
     - [#]() | 
-    - [#](change-linux-console-screen-blanking-behavior) | Change Linux console screen blanking behavior
+    - [#](#change-linux-console-screen-blanking-behavior) | Change Linux console screen blanking behavior
 - [#](#desktop-only) | Desktop Only
     - [#](#find-wallpapers) | Find wallpapers
 
