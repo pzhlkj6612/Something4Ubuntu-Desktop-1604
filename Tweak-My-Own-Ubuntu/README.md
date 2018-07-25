@@ -27,5 +27,6 @@ I like using ```vim``` to edit file, you can use ```nano```, or what your favori
   - [#](./whatever/fix-time-differences-between-ubuntu-and-windows-dual-boot.md) | Fix time differences between Ubuntu and Windows dual boot \<Unfinished\>
   - [#](./whatever/global-proxy.md) | Global Proxy \<Unfinished\>
   - [#](./whatever/change-linux-console-screen-blanking-behavior.md) | Change Linux console screen blanking behavior
+  - [#](./whatever/kvm.md) | KVM \<Unfinished\>
 - Desktop Only
   - [#](./desktop-only/find-wallpapers.md) | Find wallpapers
