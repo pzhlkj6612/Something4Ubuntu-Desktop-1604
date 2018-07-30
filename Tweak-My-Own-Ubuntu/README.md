@@ -28,5 +28,7 @@ I like using ```vim``` to edit file, you can use ```nano```, or what your favori
   - [#](./whatever/global-proxy.md) | Global Proxy \<Unfinished\>
   - [#](./whatever/change-linux-console-screen-blanking-behavior.md) | Change Linux console screen blanking behavior
   - [#](./whatever/kvm.md) | KVM \<Unfinished\>
+  - [#](./whatever/screen---the-wave-that-never-dies.md) | screen - The wave that never dies \<Unfinished\>
+  - [#](./whatever/httpserver---too-simple.md) | http.server - Too simple! \<Unfinished\>
 - Desktop Only
   - [#](./desktop-only/find-wallpapers.md) | Find wallpapers
