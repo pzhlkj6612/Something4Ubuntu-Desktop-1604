@@ -10,4 +10,6 @@ There are some contents about configuring and customizing Ubuntu Desktop/Server,
 
 ## [Install Ubuntu on nVIDIA Notebook](./NVIDIA-FxxK-YOU)
 
-Helpful?
+&nbsp;&nbsp;&nbsp;&nbsp;- Helpful?
+
+&nbsp;&nbsp;&nbsp;&nbsp;- No, not at all :)
