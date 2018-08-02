@@ -33,3 +33,5 @@ I like using ```vim``` to edit file, you can use ```nano```, or what your favori
   - [#](./whatever/httpserver---too-simple.md) | http.server - Too simple! \<Unfinished\>
 - Desktop Only
   - [#](./desktop-only/find-wallpapers.md) | Find wallpapers
+- External
+  - [#](https://www.linode.com/docs/security/securing-your-server/) | How to Secure Your Server
