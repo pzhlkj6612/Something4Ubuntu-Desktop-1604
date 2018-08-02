@@ -3,7 +3,7 @@
 ### Get boot log
 
 ```shell
-journalctl -b
+sudo journalctl -b
 ```
 
 ```shell
