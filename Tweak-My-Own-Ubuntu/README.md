@@ -31,6 +31,7 @@ I like using ```vim``` to edit file, you can use ```nano```, or what your favori
   - [#](./whatever/kvm.md) | KVM \<Unfinished\>
   - [#](./whatever/screen---the-wave-that-never-dies.md) | screen - The wave that never dies \<Unfinished\>
   - [#](./whatever/httpserver---too-simple.md) | http.server - Too simple! \<Unfinished\>
+  - [#](./whatever/fix-broken-autocomplete-of-apt-gets-package-name.md) | Fix broken autocomplete of apt-get's package name
 - Desktop Only
   - [#](./desktop-only/find-wallpapers.md) | Find wallpapers
 - External
