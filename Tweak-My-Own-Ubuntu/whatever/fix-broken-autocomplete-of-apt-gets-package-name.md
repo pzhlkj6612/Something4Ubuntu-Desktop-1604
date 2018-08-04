@@ -10,12 +10,27 @@ Attention! It only works for me.
 sudo apt install bash-completion
 ```
 
-Then, append following contents to ```~/.bashrc``` or ```/etc/bash.bashrc```,
+Then, check to see if the file which is ```~/.bashrc``` contains following contents,
 
 ```shell
-if [ -f /etc/bash_completion ]; then
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
+  fi
 fi
+```
+
+If not, append it directly.
+
+Then,
+
+```shell
+. ~/.bashrc
 ```
 
 <br/>
