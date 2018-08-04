@@ -14,6 +14,12 @@ Append it to ```sudo``` group,
 sudo usermod -aG sudo USERNAME
 ```
 
+or,
+
+```shell
+sudo adduser USERNAME sudo
+```
+
 Check groups,
 
 ```shell
