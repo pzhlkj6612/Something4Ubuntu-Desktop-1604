@@ -18,6 +18,7 @@ I like using ```vim``` to edit file, you can use ```nano```, or what your favori
 
 - Whatever
   - [#](./whatever/things-that-we-have-to-do-first.md) | Things that we have to do first
+  - [#](./whatever/vim.md) | Vim
   - [#](./whatever/get-boot-log.md) | Get boot log
   - [#](./whatever/could-not-get-lock-varlibaptlistslock---open.md) | "Could not get lock /var/lib/apt/lists/lock - open"
   - [#](./whatever/new-user-new-sudoers.md) | New user, new sudoers
