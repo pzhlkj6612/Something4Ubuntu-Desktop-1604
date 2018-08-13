@@ -4,7 +4,7 @@
 
 #### HTTP proxy
 
-Set ```http_proxy``` and ```https_proxy``` point to a HTTP proxy(use ```export```, notice case **in**sensitive).
+Set ```http_proxy```, ```https_proxy``` and/or ```ftp_proxy``` point to a HTTP proxy(use ```export```, notice case **in**sensitive).
 
 <br/>
 
