@@ -4,7 +4,7 @@
 
 #### HTTP proxy
 
-Set ```http_proxy``` and ```https_proxy``` to a HTTP proxy.
+Set ```http_proxy``` and ```https_proxy``` point to a HTTP proxy(case **in**sensitive).
 
 <br/>
 
