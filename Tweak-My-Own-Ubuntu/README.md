@@ -28,7 +28,7 @@ I like using ```vim``` to edit file, you can use ```nano```, or what your favori
   - [#](./whatever/automatic-mount-hard-drives-at-boot-time.md) | Automatic mount hard drives at boot time
   - [#](./whatever/fix-time-differences-between-ubuntu-and-windows-dual-boot.md) | Fix time differences between Ubuntu and Windows dual boot \<Unfinished\>
   - [#](./whatever/environment-variables.md) | Environment variables \<Unfinished\>
-  - [#](./whatever/global-proxy.md) | Global Proxy \<Unfinished\>
+  - [#](./whatever/global-proxy.md) | Global Proxy
   - [#](./whatever/change-linux-console-screen-blanking-behavior.md) | Change Linux console screen blanking behavior
   - [#](./whatever/kvm.md) | KVM \<Unfinished\>
   - [#](./whatever/screen---the-wave-that-never-dies.md) | screen - The wave that never dies \<Unfinished\>
