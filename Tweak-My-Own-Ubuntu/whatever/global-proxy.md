@@ -59,3 +59,4 @@ Ref:
 - [The Polipo Manual](https://www.irif.fr/~jch/software/polipo/polipo.html)
 - [UbuntuServer配置\*\*代理 - 钇钛网](https://blog.yourtion.com/ubuntu-server-add-shadowsocks-proxy.html)
 - [Ubuntu server命令行配置\*\*全局代理 - jingsam](https://jingsam.github.io/2016/05/08/setup-shadowsocks-http-proxy-on-ubuntu-server.html)
+- [将Socks5转换为HTTP/HTTPS类型](https://blog.yasking.org/a/covert-socks5-to-http.html)
