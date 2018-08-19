@@ -8,7 +8,7 @@
 
 ```
 syntax on
-colorscheme desert
+colorscheme pablo
 ```
 
 > Available colorschema:    
@@ -17,19 +17,21 @@ colorscheme desert
 > &nbsp;&nbsp;&nbsp;&nbsp;desert    
 > &nbsp;&nbsp;&nbsp;&nbsp;evening    
 > &nbsp;&nbsp;&nbsp;&nbsp;koehler    
-> &nbsp;&nbsp;&nbsp;&nbsp;murphy    
+> &nbsp;&nbsp;&nbsp;&nbsp;**murphy**    
 > &nbsp;&nbsp;&nbsp;&nbsp;peachpuff    
 > &nbsp;&nbsp;&nbsp;&nbsp;shine    
-> &nbsp;&nbsp;&nbsp;&nbsp;torte    
+> &nbsp;&nbsp;&nbsp;&nbsp;**torte**    
 > &nbsp;&nbsp;&nbsp;&nbsp;darkblue    
 > &nbsp;&nbsp;&nbsp;&nbsp;delek    
-> &nbsp;&nbsp;&nbsp;&nbsp;elflord    
-> &nbsp;&nbsp;&nbsp;&nbsp;industry    
+> &nbsp;&nbsp;&nbsp;&nbsp;**elflord**    
+> &nbsp;&nbsp;&nbsp;&nbsp;**industry**    
 > &nbsp;&nbsp;&nbsp;&nbsp;morning    
-> &nbsp;&nbsp;&nbsp;&nbsp;pablo    
+> &nbsp;&nbsp;&nbsp;&nbsp;**pablo**    
 > &nbsp;&nbsp;&nbsp;&nbsp;ron    
 > &nbsp;&nbsp;&nbsp;&nbsp;slate    
 > &nbsp;&nbsp;&nbsp;&nbsp;zellner
+
+Items with **bold text** are my recommendation.
 
 <br/>
 
