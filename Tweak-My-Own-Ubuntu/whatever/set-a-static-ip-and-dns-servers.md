@@ -88,7 +88,7 @@ dns-nameservers 8.8.8.8
 
 PS: **DO NOT** place multiple addresses on a single line, especially ```dns-nameservers```.
 
-3. Put your settings into effect without reboot system
+3. Put your settings into effect without reboot system (You'd better reboot it)
 
 ```shell
 sudo ip address flush enp2s0 && sudo systemctl restart networking.service
