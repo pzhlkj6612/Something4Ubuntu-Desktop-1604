@@ -39,3 +39,4 @@ I like using ```vim``` to edit file, you can use ```nano```, or what your favori
   - [#](./desktop-only/find-wallpapers.md) | Find wallpapers
 - External
   - [#](https://www.linode.com/docs/security/securing-your-server/) | How to Secure Your Server
+  - [#](https://askubuntu.com/questions/12493/how-can-i-find-the-version-of-ubuntu-that-is-installed/178254#178254) | release management - How can I find the version of Ubuntu that is installed? - Ask Ubuntu
