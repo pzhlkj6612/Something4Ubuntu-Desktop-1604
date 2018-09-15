@@ -68,8 +68,8 @@ iface enp2s0 inet static
 address xxx.xxx.xxx.xxx
 netmask xxx.xxx.xxx.xxx
 gateway xxx.xxx.xxx.xxx
-dns-nameservers xxx.xxx.xxx.xxx(first DNS servers ip)
-dns-nameservers xxx.xxx.xxx.xxx(second DNS servers ip)
+dns-nameserver xxx.xxx.xxx.xxx(first DNS servers ip)
+dns-nameserver xxx.xxx.xxx.xxx(second DNS servers ip)
 ```
 
 Here is an example,
