@@ -15,3 +15,4 @@ Ref:
 Ref++:
 
 - [Create a simple http server with Python 3 | Daan Lenaerts](https://daanlenaerts.com/blog/2015/06/03/create-a-simple-http-server-with-python-3/)
+- [quick ipv6 http server using python&#39;s SimpleHttpServer · GitHub](https://gist.github.com/akorobov/7903307)
