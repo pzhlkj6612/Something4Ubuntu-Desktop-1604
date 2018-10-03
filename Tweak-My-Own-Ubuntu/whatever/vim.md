@@ -39,3 +39,9 @@ Ref:
 
 - [Enabling vi syntax colors - Media Temple](https://mediatemple.net/community/products/dv/204644480/enabling-vi-syntax-colors)
 - [How to get the list of all installed color schemes in Vim? - Stack Overflow](https://stackoverflow.com/questions/7331940/how-to-get-the-list-of-all-installed-color-schemes-in-vim)
+
+<br/>
+
+#### Motions
+
+- [Vim documentation: motion](http://vimdoc.sourceforge.net/htmldoc/motion.html)
