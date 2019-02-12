@@ -1,7 +1,5 @@
 # Tweak My Own Ubuntu - 16.04 Only
 
-![](./Beaver_Wallpaper_Grey_4096x2304.png?raw=true)
-
 *I can eat glass, it does not hurt me.*
 
 *我能切开西红柿且伤到手指。*
@@ -30,7 +28,7 @@ I like using ```vim``` to edit file, you can use ```nano```, or what your favori
   - [#](./whatever/environment-variables.md) | Environment variables \<Unfinished\>
   - [#](./whatever/global-proxy.md) | Global Proxy
   - [#](./whatever/change-linux-console-screen-blanking-behavior.md) | Change Linux console screen blanking behavior
-  - [#](./whatever/kvm.md) | KVM \<Unfinished\>
+  - [#](./whatever/kvm.md) | KVM \<Unfinished, 18.04 Only\>
   - [#](./whatever/screen---the-wave-that-never-dies.md) | screen - The wave that never dies \<Unfinished\>
   - [#](./whatever/httpserver---too-simple.md) | http.server - Too simple! \<Unfinished\>
   - [#](./whatever/fix-broken-autocomplete-of-apt-gets-package-name.md) | Fix broken autocomplete of apt-get's package name
