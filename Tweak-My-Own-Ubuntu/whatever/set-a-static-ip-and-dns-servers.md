@@ -87,7 +87,7 @@ dns-nameserver 8.8.8.8
 dns-nameservers 8.8.4.4 208.69.38.205 114.114.114.114 1.1.1.1
 ```
 
-PS: **DO NOT** place multiple addresses in `dns-nameserver` line, but in ```dns-nameservers```.
+PS: **DO NOT** place multiple addresses in `dns-nameserver` line, but in `dns-nameservers`.
 
 3. Put your settings into effect without reboot system (You'd better reboot it)
 
@@ -134,6 +134,8 @@ nameserver 208.69.38.205
 nameserver 114.114.114.114
 ```
 
+Have you see it? `dns-nameservers` has higher priority than `dns-nameserver`. And, there are only up to 3 DNS server addresses in Linux, in general(You can use a local DNS service to exceed the limitation, see Ref#).
+
 <br/>
 
 If something goes wrong, just reboot your system :(
@@ -152,3 +154,7 @@ Ref:
 Ref++:
 
 - [Network Configuration](https://help.ubuntu.com/lts/serverguide/network-configuration.html)
+
+Ref#:
+
+- [linux - How to overcome libc resolver limitation of maximum 3 nameservers? - Unix &amp; Linux Stack Exchange](https://unix.stackexchange.com/questions/28004/how-to-overcome-libc-resolver-limitation-of-maximum-3-nameservers)
