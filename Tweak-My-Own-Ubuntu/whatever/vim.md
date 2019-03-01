@@ -6,8 +6,9 @@
 
 ```/etc/vim/vimrc```/```~/.vimrc```,
 
+Set the theme,
+
 ```
-syntax on
 colorscheme pablo
 ```
 
@@ -32,6 +33,12 @@ colorscheme pablo
 > &nbsp;&nbsp;&nbsp;&nbsp;zellner
 
 Items with **bold text** are my recommendation.
+
+Then, enable syntax highlighting if there is not ```syntax on```,
+
+```
+syntax on
+```
 
 <br/>
 
