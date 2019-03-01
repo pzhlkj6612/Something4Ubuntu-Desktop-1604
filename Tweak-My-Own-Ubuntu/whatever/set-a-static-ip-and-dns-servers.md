@@ -116,8 +116,8 @@ ip route show
 ```
 
 ```
-default via 192.168.1.100 dev enp2s0 ...
-192.168.1.0/24 dev enp2s0  ...  ...  src 192.168.1.1
+default via 192.168.1.1 dev enp2s0 ...
+192.168.1.0/24 dev enp2s0  ...  ...  src 192.168.1.100
 ```
 
 DNS,
