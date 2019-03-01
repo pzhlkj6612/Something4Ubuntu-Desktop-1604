@@ -134,7 +134,7 @@ nameserver 208.69.38.205
 nameserver 114.114.114.114
 ```
 
-Have you see it? `dns-nameservers` has higher priority than `dns-nameserver`. And, there are only up to 3 DNS server addresses in Linux, in general(You can use a local DNS service to exceed the limitation, see Ref#).
+Have you see it? `dns-nameservers` has higher priority than `dns-nameserver`. And, there are only up to 3 DNS server addresses in Linux, in general (You can use a local DNS service to exceed the limitation, see Ref#).
 
 <br/>
 
