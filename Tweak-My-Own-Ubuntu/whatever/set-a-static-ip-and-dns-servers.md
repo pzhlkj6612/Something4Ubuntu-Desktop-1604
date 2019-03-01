@@ -7,17 +7,18 @@
 1. Which interface do I use for my static IP?
 
 ```shell
-sudo ifconfig  -a
+ip address show
 ```
 
 ```
-enp2s0    Link encap:Ethernet  HWaddr FF:FF:FF:FF:FF:FF
-          inet addr:...
-          ...
-
-lo        Link encap:Local Loopback
-          inet addr:127.0.0.1  Mask:255.0.0.0
-          ...
+1: enp2s0: <BROADCAST,MULTICAST,UP> mtu 1500 group default qlen 1
+    link/ether ff:ff:ff:ff:ff:ff
+    inet .../... brd ... scope global dynamic
+       valid_lft 666666sec preferred_lft 666666sec
+2: lo: <LOOPBACK,UP> mtu 1500 group default qlen 1
+    link/loopback 00:00:00:00:00:00
+    inet 127.0.0.1/8 brd 127.255.255.255 scope global dynamic
+       valid_lft forever preferred_lft forever
 
 ...
 
@@ -97,13 +98,14 @@ sudo ip address flush enp2s0 && sudo systemctl restart networking.service
 Then, check IP,
 
 ```shell
-sudo ifconfig  -a
+ip address show
 ```
 
 ```
-enp2s0    Link encap:Ethernet  HWaddr FF:FF:FF:FF:FF:FF
-          inet addr:192.168.1.100  Bcast:192.168.1.255  Mask:255.255.255.0
-          ...
+1: enp2s0: <BROADCAST,MULTICAST,UP> mtu 1500 group default qlen 1
+    link/ether ff:ff:ff:ff:ff:ff
+    inet 192.168.1.100/24 brd 192.168.1.255 scope global dynamic
+    ...
 
 ```
 
