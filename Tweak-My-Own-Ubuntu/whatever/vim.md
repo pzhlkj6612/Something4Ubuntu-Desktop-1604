@@ -4,7 +4,7 @@
 
 #### Enabling Vi syntax colors
 
-```/etc/vim/vimrc```/```~/.vimrc```,
+```/etc/vim/vimrc``` or ```~/.vimrc```,
 
 Set the theme,
 
