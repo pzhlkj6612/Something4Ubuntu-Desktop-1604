@@ -49,6 +49,22 @@ Ref:
 
 <br/>
 
+#### Enter the Paste Mode
+
+Disable continuation of comments or indent to the next line.
+
+``` vim
+:set paste
+```
+
+Enable that function.
+
+``` vim
+:set nopaste
+```
+
+<br/>
+
 #### Motions
 
 - [Vim documentation: motion](http://vimdoc.sourceforge.net/htmldoc/motion.html)
