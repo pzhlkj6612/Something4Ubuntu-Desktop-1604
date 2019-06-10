@@ -65,6 +65,12 @@ Enable that function.
 
 <br/>
 
+Ref:
+
+- [Can I disable continuation of comments to the next line in Vim? - Super User](https://superuser.com/questions/271023/can-i-disable-continuation-of-comments-to-the-next-line-in-vim)
+
+<br/>
+
 #### Motions
 
 - [Vim documentation: motion](http://vimdoc.sourceforge.net/htmldoc/motion.html)
