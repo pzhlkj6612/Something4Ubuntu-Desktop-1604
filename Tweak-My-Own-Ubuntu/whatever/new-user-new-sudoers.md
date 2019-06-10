@@ -23,19 +23,19 @@ sudo adduser USERNAME sudo
 Check groups,
 
 ```shell
-cat /etc/group
+cat /etc/group | grep USERNAME
 ```
 
 check uesrs,
 
 ```shell
-cat /etc/passwd
+cat /etc/passwd | grep USERNAME
 ```
 
 or,
 
 ```shell
-cat /etc/shadow
+cat /etc/shadow | grep USERNAME
 ```
 
 <br/>
