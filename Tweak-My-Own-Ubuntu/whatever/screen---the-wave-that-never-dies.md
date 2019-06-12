@@ -2,19 +2,31 @@
 
 ### screen - The wave that never dies
 
+Create a session.
+
 ```shell
 screen screenname
 ```
+
+Leave from here.
+
+```shell
+screen -d
+```
+
+Where I've been?
 
 ```shell
 screen -ls
 ```
 
+I want to go there again.
+
 ```shell
 screen -r balabala
 ```
 
-"There is no screen to be resumed"?
+~"There is no screen to be resumed"?~
 
 ```shell
 screen -d -r balabala
